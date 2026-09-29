@@ -39,6 +39,12 @@ RUNS = {
         "searchTerms": ["márcia cosméticos", "site:marciaonline.com.br", "site:marciacosmeticos.com.br",
                         "shampoo aney brilho molhado", "descolorante márcia", "creme para cachos barato"],
         "countryCode": "br", "languageCode": "pt", "maxPagesPerQuery": 1, "maxItems": 60}),
+    # Criativos ativos dos concorrentes na Biblioteca de Anúncios da Meta (Brasil)
+    "meta_criativos": ("curious_coder~facebook-ads-library-scraper", {
+        "urls": [{"url": f"https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&media_type=all&search_type=page&view_all_page_id={pid}"}
+                 for pid in ["176403812396157", "396847547052375", "275497395816059",
+                             "151302388269129", "1231415946729623", "142566762421869"]],
+        "limitPerSource": 25, "count": 150}),
 }
 
 
