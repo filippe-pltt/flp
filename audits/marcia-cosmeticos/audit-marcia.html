@@ -26,8 +26,8 @@
 
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;padding-inline:16px;padding-block:0 64px}
-.wrap{max-width:980px;margin:0 auto}
-.read{max-width:72ch}
+.wrap{max-width:1200px;margin:0 auto}
+.read{max-width:78ch}
 h1,h2,h3{font-family:var(--f-display);line-height:1.12;text-wrap:balance;margin:0}
 h1{font-size:clamp(2.1rem,5.2vw,3.4rem);font-weight:800;letter-spacing:-.02em}
 h2{font-size:clamp(1.5rem,3.2vw,2rem);font-weight:700;letter-spacing:-.01em}
@@ -39,23 +39,25 @@ code,.mono{font-family:var(--f-mono);font-size:.86em}
 .eyebrow{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .muted{color:var(--muted)}
 .stack{display:flex;flex-direction:column;gap:14px}
-section{padding-block:56px 8px;border-top:1px solid var(--line);margin-top:48px}
+section{padding-block:40px 0;border-top:1px solid var(--line);margin-top:36px}
 section > .stack{gap:18px}
 
 /* cabeçalho */
 header.top{padding-block:40px 8px}
 .brandline{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;justify-content:space-between;padding-bottom:28px;border-bottom:3px solid var(--ink)}
 .brandline .mono{font-size:.8rem}
-.hero{display:grid;gap:22px;padding-block:32px 0}
+.hero{display:grid;gap:18px 48px;padding-block:28px 0;align-items:end}
+@media (min-width:980px){.hero{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)} .hero h1{grid-column:1/-1}}
 .thesis{font-size:clamp(1.15rem,2.3vw,1.38rem);line-height:1.5;max-width:60ch}
 .thesis strong{background:linear-gradient(transparent 62%,var(--accent-soft) 62%)}
 
 /* números */
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:30px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:30px}
 .kpi{background:var(--paper);padding:18px 18px 16px;display:flex;flex-direction:column;gap:6px;min-width:0}
 .kpi b{font-family:var(--f-display);font-size:2.15rem;font-weight:800;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
 .kpi b.crit{color:var(--crit)}
-.kpi span{font-size:.88rem;color:var(--muted);line-height:1.4}
+.kpi span{font-size:.95rem;color:var(--muted);line-height:1.45}
+.kpi{padding:22px 24px 20px}
 
 /* scorecard */
 .score{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}
@@ -83,7 +85,16 @@ td.zero{color:var(--crit);font-weight:700}
 caption{caption-side:bottom;text-align:left;padding:10px 14px;font-size:.8rem;color:var(--muted);white-space:normal}
 
 /* achados */
-.finding{display:grid;gap:14px;padding:22px 0 26px;border-bottom:1px dashed var(--line)}
+.finding{display:grid;gap:16px;padding:26px 0 30px;border-bottom:1px dashed var(--line)}
+.fbody{display:grid;gap:18px 40px;align-items:start}
+.ftext,.fside{display:flex;flex-direction:column;gap:14px;min-width:0}
+.ftext .read,.ftext li{max-width:none}
+.fside .pair{grid-template-columns:1fr}
+.fside .fix{max-width:none}
+@media (min-width:980px){
+  .fbody{grid-template-columns:minmax(0,1fr) minmax(0,420px)}
+  .fside{position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px)}
+}
 .finding:last-child{border-bottom:0}
 .fhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 12px}
 .tag{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:4px;font-weight:500;white-space:nowrap}
@@ -91,7 +102,7 @@ caption{caption-side:bottom;text-align:left;padding:10px 14px;font-size:.8rem;co
 .tag.warn{background:var(--warn-soft);color:var(--warn)}
 .tag.new{background:var(--accent-soft);color:var(--accent)}
 .finding ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px}
-.finding li{max-width:70ch}
+.finding li{max-width:75ch}
 .fix{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--ok);border-radius:6px;padding:12px 16px;font-size:.94rem;max-width:72ch}
 .fix b{color:var(--ok)}
 figure{margin:0;display:flex;flex-direction:column;gap:8px;max-width:100%}
@@ -116,6 +127,10 @@ figcaption{font-size:.82rem;color:var(--muted);line-height:1.4}
 .phase .when{font-family:var(--f-display);font-weight:800;font-size:1.5rem;color:var(--accent)}
 .phase ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:8px;font-size:.93rem}
 
+.cols2{display:grid;gap:14px 40px}
+.cols2 .read{max-width:none}
+@media (min-width:900px){.cols2{grid-template-columns:1.4fr 1fr}}
+
 /* posicionamento */
 .house{display:grid;gap:10px}
 .house .roof{background:var(--ink);color:var(--bg);border-radius:10px 10px 4px 4px;padding:18px 20px;font-family:var(--f-display);font-weight:700;font-size:clamp(1.15rem,2.4vw,1.45rem);line-height:1.3}
@@ -125,7 +140,8 @@ figcaption{font-size:.82rem;color:var(--muted);line-height:1.4}
 .pillar h3{font-size:1.02rem}
 .pillar ul{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:4px;color:var(--muted)}
 .house .base{background:var(--bg);border:1px dashed var(--line);border-radius:4px 4px 10px 10px;padding:12px 16px;font-size:.9rem;color:var(--muted)}
-.check{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;align-items:baseline}
+.check{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px 14px;align-items:baseline}
+@media (min-width:980px){.check{grid-template-columns:auto minmax(0,1fr) auto minmax(0,1fr);column-gap:18px;row-gap:18px}}
 .check .v{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:4px;white-space:nowrap}
 .v.ok{background:var(--ok-soft);color:var(--ok)} .v.part{background:var(--warn-soft);color:var(--warn)} .v.no{background:var(--crit-soft);color:var(--crit)}
 td.wrap{white-space:normal;min-width:200px}
@@ -196,8 +212,10 @@ footer ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px
         <caption>Visitas: estimativa Similarweb para agosto de 2026, todos os canais. Orgânico Google: estimativa Semrush de cliques vindos da busca orgânica no Brasil, em setembro de 2026. Engajamento: média de curtidas e comentários dos 12 posts mais recentes dividida pelos seguidores. Facebook pela Biblioteca de Anúncios da Meta; Instagram e TikTok pelos perfis públicos, coletados via Apify em 29/09. Anúncios ativos no Brasil em 28/09. "n/d": dado indisponível ou perfil oficial não identificado com segurança.</caption>
       </table>
     </div>
+    <div class="cols2">
     <p class="read"><strong>Por que os dois números não batem.</strong> São duas estimativas feitas de jeitos diferentes. O Similarweb extrapola visitas totais (direto, redes, anúncios, busca) a partir de um painel de navegação. O Semrush calcula só os cliques da busca orgânica do Google, a partir da posição e do volume de cada palavra. Na Márcia, o orgânico estimado pelo Semrush em agosto (814) é cerca de 18% das visitas do Similarweb, uma proporção plausível. Na Lola, o Semrush estima mais tráfego orgânico (292 mil) do que o Similarweb estima de visitas totais (195 mil), o que é impossível se as duas estivessem certas. Por isso os números servem para comparar ordem de grandeza entre marcas, e não como valor absoluto. O número real sai do GA4 e do Search Console.</p>
     <p class="read">No frete, a referência é a Salon Line, que anuncia no topo do site <strong>"frete grátis acima de R$ 99"</strong>. É uma regra nacional, simples e visível antes do carrinho.</p>
+    </div>
     <h3 style="margin-top:18px">O que os concorrentes anunciam</h3>
     <p class="read">Lemos os anúncios ativos de seis concorrentes na Biblioteca da Meta: até 30 por marca, com prioridade para os de maior alcance, 150 no total.</p>
     <div class="tbl">
@@ -226,35 +244,62 @@ footer ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px
 
   <article class="finding">
     <div class="fhead"><span class="tag crit">Crítico</span><span class="tag new">Novo</span><h3>1. Seis pixels instalados e nenhuma campanha no ar</h3></div>
-    <p class="read">O site carrega, em toda página, dois pixels da Meta, duas contas de Google Ads e dois pixels do TikTok. Cada visita à home gera eventos <code>PageView</code> e <code>ViewHome</code> nas duas contas da Meta e <code>view_home</code> nas duas do Google Ads. Mesmo assim, a Biblioteca de Anúncios da Meta não mostra nenhum anúncio ativo da página oficial, e o Google Ads Transparency Center não mostra nenhum anúncio apontando para <code>marciacosmeticos.com.br</code> ou <code>marciaonline.com.br</code>.</p>
-    <div class="ids">
-      <code>Meta 1036792118901758</code><code>Meta 847340554691511</code><code>AW-16482982365</code><code>AW-18326144078</code><code>TikTok D9HSJPBC77UD7F80B2C0</code><code>TikTok DABJ23BC77UF8GCEDQ50</code><code>GA4 G-N9DMG905M5</code><code>GTM-MKK6HLCD</code>
-    </div>
-    <ul>
+    <div class="fbody">
+      <div class="ftext">
+      <p class="read">O site carrega, em toda página, dois pixels da Meta, duas contas de Google Ads e dois pixels do TikTok. Cada visita à home gera eventos <code>PageView</code> e <code>ViewHome</code> nas duas contas da Meta e <code>view_home</code> nas duas do Google Ads. Mesmo assim, a Biblioteca de Anúncios da Meta não mostra nenhum anúncio ativo da página oficial, e o Google Ads Transparency Center não mostra nenhum anúncio apontando para <code>marciacosmeticos.com.br</code> ou <code>marciaonline.com.br</code>.</p>
+      <ul>
       <li>Contas em dobro costumam ser sinal de agências anteriores que saíram sem entregar os acessos. O histórico de público e de conversões fica dividido e, às vezes, sem dono.</li>
       <li>O TikTok tem dois pixels para um perfil com 79 seguidores e nenhum anúncio.</li>
       <li>O Semrush registra um único anúncio de busca da Márcia nos últimos 12 meses. Foi em agosto de 2026, na palavra <strong>"aflore"</strong> (marca concorrente, 720 buscas por mês), com um texto genérico ("Loja Online de Cosméticos… Marcia Cosmetics") levando para a home. Ou seja, alguém ainda mexe na conta de Google Ads, sem estratégia visível.</li>
       <li>A premissa do documento anterior ("a Márcia paga mídia") não se confirma hoje. O que se confirma é que ela já pagou e parou, ou paga por outra página que não a oficial.</li>
     </ul>
-    <figure><img src="img/meta.jpg" alt="Biblioteca de Anúncios da Meta mostrando a página Márcia Cosméticos sem nenhum anúncio ativo" loading="lazy" width="1100" height="724"><figcaption>Biblioteca de Anúncios da Meta, página oficial (ID 175086359210667), filtro de anúncios ativos no Brasil, 28/09/2026.</figcaption></figure>
-    <p class="fix"><b>O que fazer:</b> levantar na reunião quem é dono de cada conta e Business Manager. Consolidar em uma conta por plataforma, em nome da Márcia, e remover os pixels órfãos antes de retomar qualquer verba.</p>
+      <div class="ids">
+      <code>Meta 1036792118901758</code><code>Meta 847340554691511</code><code>AW-16482982365</code><code>AW-18326144078</code><code>TikTok D9HSJPBC77UD7F80B2C0</code><code>TikTok DABJ23BC77UF8GCEDQ50</code><code>GA4 G-N9DMG905M5</code><code>GTM-MKK6HLCD</code>
+    </div>
+      </div>
+      <aside class="fside">
+      <figure><img src="img/meta.jpg" alt="Biblioteca de Anúncios da Meta mostrando a página Márcia Cosméticos sem nenhum anúncio ativo" loading="lazy" width="1100" height="724"><figcaption>Biblioteca de Anúncios da Meta, página oficial (ID 175086359210667), filtro de anúncios ativos no Brasil, 28/09/2026.</figcaption></figure>
+      <p class="fix"><b>O que fazer:</b> levantar na reunião quem é dono de cada conta e Business Manager. Consolidar em uma conta por plataforma, em nome da Márcia, e remover os pixels órfãos antes de retomar qualquer verba.</p>
+      </aside>
+    </div>
   </article>
 
   <article class="finding">
     <div class="fhead"><span class="tag crit">Crítico</span><span class="tag new">Novo</span><h3>2. A conversão do Google Ads pode contar compras que não aconteceram</h3></div>
-    <p class="read">O container público do GTM (versão 8) tem só cinco tags. A de conversão do Google Ads (<code>AW-18326144078</code>) dispara em <strong>qualquer URL que contenha "checkout"</strong>, inclusive em mudanças de tela sem recarregar a página. Na Loja Integrada, "checkout" aparece em todas as etapas, do carrinho à confirmação. O valor e o número do pedido são lidos de elementos que só existem na tela de pedido concluído.</p>
-    <ul>
+    <div class="fbody">
+      <div class="ftext">
+      <p class="read">O container público do GTM (versão 8) tem só cinco tags. A de conversão do Google Ads (<code>AW-18326144078</code>) dispara em <strong>qualquer URL que contenha "checkout"</strong>, inclusive em mudanças de tela sem recarregar a página. Na Loja Integrada, "checkout" aparece em todas as etapas, do carrinho à confirmação. O valor e o número do pedido são lidos de elementos que só existem na tela de pedido concluído.</p>
+      <ul>
       <li>Resultado provável: início de checkout registrado como compra, com valor vazio ou zero. Isso distorce o custo por venda e o aprendizado dos lances automáticos.</li>
       <li>Conversões otimizadas e relatório de produtos estão desligados na tag.</li>
       <li>O vínculo entre os domínios <code>marciacosmeticos.com.br</code> e <code>marciaonline.com.br</code> está configurado. Isso responde à dúvida levantada no documento anterior.</li>
       <li>O GA4 dispara um único <code>page_view</code> por página, então não há contagem dupla ali.</li>
     </ul>
-    <p class="fix"><b>O que fazer:</b> restringir o gatilho à página de pedido concluído, usar o evento de compra nativo da plataforma com valor e ID do pedido, e ligar as conversões otimizadas.</p>
+      </div>
+      <aside class="fside">
+      <p class="fix"><b>O que fazer:</b> restringir o gatilho à página de pedido concluído, usar o evento de compra nativo da plataforma com valor e ID do pedido, e ligar as conversões otimizadas.</p>
+      </aside>
+    </div>
   </article>
 
   <article class="finding">
     <div class="fhead"><span class="tag crit">Crítico</span><h3>3. O frete custa mais que o produto fora do Rio</h3></div>
-    <p class="read">Cotamos o Shampoo Aney Brilho Molhado 300 ml (R$ 11,94) na calculadora da página de produto. O site só oferece Correios.</p>
+    <div class="fbody">
+      <div class="ftext">
+      <p class="read">Cotamos o Shampoo Aney Brilho Molhado 300 ml (R$ 11,94) na calculadora da página de produto. O site só oferece Correios.</p>
+      <ul>
+      <li>Existem uma régua de frete grátis (pop-up "Quer FRETE GRÁTIS? Digite o seu CEP e saiba quanto falta!"), um combo com 10% de desconto na página do produto e o Kit Cachos Perfeitos. As alavancas estão lá, mas escondidas: nenhuma mostra um valor mínimo antes do carrinho.</li>
+      <li>Na listagem do Mercado Livre, produtos Márcia aparecem com frete grátis para o comprador. A consumidora tem um bom motivo para não comprar no site.</li>
+    </ul>
+      </div>
+      <aside class="fside">
+      <div class="pair">
+      <figure><img src="img/home.jpg" alt="Home do site com o selo Frete grátis para RJ" loading="lazy" width="1100" height="724"><figcaption>A home promete "Frete grátis para RJ" sem dizer a partir de qual valor.</figcaption></figure>
+      <figure><img src="img/frete-rj.jpg" alt="Calculadora de frete na página do shampoo mostrando R$ 10,36 para CEP do centro do Rio" loading="lazy" width="566" height="630"><figcaption>No mesmo site, 1 shampoo para o Centro do Rio (20040-002) sai por R$ 10,36.</figcaption></figure>
+    </div>
+      <p class="fix"><b>O que fazer:</b> definir uma régua nacional única (a Salon Line usa R$ 99) e mostrá-la no topo de todas as páginas. Montar kits por rotina ("cachos completo", "coloração em casa") entre R$ 60 e R$ 110, e só voltar a anunciar produto avulso para quem já está no RJ.</p>
+      </aside>
+    </div>
     <div class="tbl">
       <table>
         <thead><tr><th>Destino (CEP central)</th><th class="num">PAC</th><th class="num">Prazo</th><th class="num">SEDEX</th><th class="num">PAC ÷ produto</th></tr></thead>
@@ -268,20 +313,34 @@ footer ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px
         <caption>Cotação feita em 28/09/2026 com 1 unidade. Prazos em dias úteis, como informados pelo site.</caption>
       </table>
     </div>
-    <div class="pair">
-      <figure><img src="img/home.jpg" alt="Home do site com o selo Frete grátis para RJ" loading="lazy" width="1100" height="724"><figcaption>A home promete "Frete grátis para RJ" sem dizer a partir de qual valor.</figcaption></figure>
-      <figure><img src="img/frete-rj.jpg" alt="Calculadora de frete na página do shampoo mostrando R$ 10,36 para CEP do centro do Rio" loading="lazy" width="566" height="630"><figcaption>No mesmo site, 1 shampoo para o Centro do Rio (20040-002) sai por R$ 10,36.</figcaption></figure>
-    </div>
-    <ul>
-      <li>Existem uma régua de frete grátis (pop-up "Quer FRETE GRÁTIS? Digite o seu CEP e saiba quanto falta!"), um combo com 10% de desconto na página do produto e o Kit Cachos Perfeitos. As alavancas estão lá, mas escondidas: nenhuma mostra um valor mínimo antes do carrinho.</li>
-      <li>Na listagem do Mercado Livre, produtos Márcia aparecem com frete grátis para o comprador. A consumidora tem um bom motivo para não comprar no site.</li>
-    </ul>
-    <p class="fix"><b>O que fazer:</b> definir uma régua nacional única (a Salon Line usa R$ 99) e mostrá-la no topo de todas as páginas. Montar kits por rotina ("cachos completo", "coloração em casa") entre R$ 60 e R$ 110, e só voltar a anunciar produto avulso para quem já está no RJ.</p>
   </article>
 
   <article class="finding">
     <div class="fhead"><span class="tag crit">Crítico</span><span class="tag new">Atualizado</span><h3>4. No Google, a Márcia só existe para quem já digita "Márcia"</h3></div>
-    <p class="read">Pelo Semrush, o site tem 536 palavras no top 100 do Google e cerca de 1,3 mil visitas orgânicas por mês. Em julho de 2022 eram cerca de 5,7 mil. A queda maior aconteceu entre outubro e dezembro de 2023 (de 1,9 mil para 237 visitas), o que coincide com a troca de loja e de domínio. O site nunca recuperou o patamar anterior.</p>
+    <div class="fbody">
+      <div class="ftext">
+      <p class="read">Pelo Semrush, o site tem 536 palavras no top 100 do Google e cerca de 1,3 mil visitas orgânicas por mês. Em julho de 2022 eram cerca de 5,7 mil. A queda maior aconteceu entre outubro e dezembro de 2023 (de 1,9 mil para 237 visitas), o que coincide com a troca de loja e de domínio. O site nunca recuperou o patamar anterior.</p>
+      <ul>
+      <li><strong>A lacuna de coloração existe também na busca.</strong> Nas buscas genéricas de tinta e descolorante, nenhum dos quatro concorrentes analisados (Salon Line, Skala, Bio Extratus e Beauty Color) está no top 20. Quem ocupa o espaço são varejistas, L'Oréal e Embelleze. A Salon Line só aparece em guanidina e num tutorial de coloração. A Beauty Color pega "tinta sem amônia" (14,8 mil buscas) com um único artigo. São buscas de dificuldade baixa a média, que se ganham com páginas de categoria bem escritas e guias.</li>
+      <li><strong>O blog já é o que traz tráfego novo, mas está solto.</strong> O subdomínio <code>blog.marciacosmeticos.com.br</code> tem 129 palavras e cerca de 200 visitas estimadas por mês, com posts como "5.0 coloração" (6º lugar em "5.0") e "guanidina o que é" (8º). A loja não tem nenhum link para ele. Há três posts sobre guanidina competindo entre si, e posts em categorias trocadas: o guia de Cores Nativas está em "Mãos e pés", e o de alisantes em "Coloração".</li>
+      <li><strong>A própria home aponta para o domínio antigo.</strong> Os sete banners de categoria da home (Cores Nativas, Cores Naturais, descoloração, AOX, óleos, tratamento e mãos e pés) levam para <code>www.marciaonline.com.br/…</code>, que redireciona de volta. É um salto a mais em cada clique, e para o Google a home continua "votando" no domínio antigo. A bio do TikTok também aponta para o marciaonline.</li>
+      <li><strong>Backlinks: pouco e concentrado.</strong> Authority Score de 11 (de 0 a 100), com 283 domínios de referência. Um único blog (<code>pinkbelezura.com.br</code>) responde por 11.313 dos 13.436 links. Faltam links de imprensa e de parceiros B2B. Hoje só aparecem ABAD, Guia da Farmácia e Brazil Beauty News.</li>
+      <li><strong>Domínio antigo: o valor já foi transferido.</strong> Dos 203 domínios que linkam o <code>marciaonline.com.br</code>, quase todos apontam para a home, que já redireciona com 301. As URLs antigas de produto (<code>*.html</code> do Magento) dão 404 e não têm nenhum link externo. Parte dos links restantes é spam de redes de backlinks. O redirecionamento um a um das URLs antigas, que o plano anterior previa, tem pouco retorno. A prioridade é tirar do Google as URLs <code>index.php/…</code> que ainda caem na página bloqueada.</li>
+      <li>O título de todas as páginas termina em "Marcia Online", e o da home é só isso. A home não tem meta description e tem o H1 vazio. 19 links do menu apontam para URLs geradas como <code>/categoria/None-2023-06-09-11-53-04.html</code>, e uma delas já aparece no Google ("marcia importados"). A categoria HIDRASHOCK abre vazia.</li>
+      <li>Nem a home, nem a página de produto, nem a de coloração têm dados estruturados de produto (<code>schema.org/Product</code>). O blog tem (artigo, FAQ e breadcrumb). Salon Line, Bio Extratus e Skafe já publicam dados de produto nas suas lojas.</li>
+      <li>Mesmo na busca pela marca o espaço é dividido: em "descolorante márcia" o site aparece em 1º, mas 6 dos 8 resultados são de farmácias e revendas. Em "creme para cachos barato", a Márcia não aparece, e a Salon Line sim.</li>
+      <li>Busca paga: o único anúncio visto pelo Semrush em 12 meses foi na marca de um concorrente (ver achado 1). Em "tinta de cabelo" e "pó descolorante", o Semrush não registra nenhum anúncio de texto no Google hoje (anúncios do Shopping não entram nessa contagem). O custo estimado do clique vai de US$ 0,08 a US$ 0,26.</li>
+      <li>Segundo o Similarweb, 83% das visitas saem na primeira página, e a visita média dura 32 segundos. Dois produtos têm o mesmo nome, "Creme de Finalização Aney Óleo de Coco", um a R$ 13,94 e outro a R$ 30,74.</li>
+    </ul>
+      </div>
+      <aside class="fside">
+      <div class="pair">
+      <figure><img src="img/hidrashock.jpg" alt="Categoria HIDRASHOCK exibindo a mensagem Não existem produtos nessa categoria" loading="lazy" width="1100" height="450"><figcaption>Categoria do menu principal, aberta pela URL "None-2023-06-09".</figcaption></figure>
+      <figure><img src="img/bloqueado.jpg" alt="Página de erro Ops, seu request foi bloqueado por segurança" loading="lazy" width="1100" height="402"><figcaption>Destino de uma URL antiga do marciaonline.com.br que ainda aparece na busca do Google.</figcaption></figure>
+    </div>
+        <p class="fix"><b>O que fazer:</b> (1) Trocar "Marcia Online" por "Márcia Cosméticos" no template, refazer o menu, tirar as categorias vazias e pedir no Search Console a remoção das URLs <code>index.php</code>. (2) Apontar os banners da home para o domínio atual e pôr o blog no menu da loja. (3) Criar páginas-guia para "tinta de cabelo", "pó descolorante", "água oxigenada 20 e 30 volumes" e "como pintar o cabelo em casa". (4) Ativar o schema de produto na loja.</p>
+      </aside>
+    </div>
     <div class="tbl">
       <table>
         <thead><tr><th>Busca</th><th class="num">Buscas/mês</th><th class="num">Dificuldade</th><th>Márcia</th><th>Quem aparece no topo</th></tr></thead>
@@ -299,25 +358,18 @@ footer ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px
         <caption>Semrush, base Brasil, 29/09/2026. Dificuldade de 0 a 100 (quanto menor, mais fácil ranquear). "Fora do top 100": o domínio não aparece entre os 100 primeiros resultados. Salon Line, Skala, Bio Extratus e Beauty Color também não aparecem no top 20 de "tinta de cabelo", "pó descolorante" e "descolorante".</caption>
       </table>
     </div>
-    <ul>
-      <li><strong>A lacuna de coloração existe também na busca.</strong> Nas buscas genéricas de tinta e descolorante, nenhum dos quatro concorrentes analisados (Salon Line, Skala, Bio Extratus e Beauty Color) está no top 20. Quem ocupa o espaço são varejistas, L'Oréal e Embelleze. A Salon Line só aparece em guanidina e num tutorial de coloração. A Beauty Color pega "tinta sem amônia" (14,8 mil buscas) com um único artigo. São buscas de dificuldade baixa a média, que se ganham com páginas de categoria bem escritas e guias.</li>
-      <li><strong>O blog já é o que traz tráfego novo, mas está solto.</strong> O subdomínio <code>blog.marciacosmeticos.com.br</code> tem 129 palavras e cerca de 200 visitas estimadas por mês, com posts como "5.0 coloração" (6º lugar em "5.0") e "guanidina o que é" (8º). A loja não tem nenhum link para ele. Há três posts sobre guanidina competindo entre si, e posts em categorias trocadas: o guia de Cores Nativas está em "Mãos e pés", e o de alisantes em "Coloração".</li>
-      <li><strong>A própria home aponta para o domínio antigo.</strong> Os sete banners de categoria da home (Cores Nativas, Cores Naturais, descoloração, AOX, óleos, tratamento e mãos e pés) levam para <code>www.marciaonline.com.br/…</code>, que redireciona de volta. É um salto a mais em cada clique, e para o Google a home continua "votando" no domínio antigo. A bio do TikTok também aponta para o marciaonline.</li>
-      <li><strong>Backlinks: pouco e concentrado.</strong> Authority Score de 11 (de 0 a 100), com 283 domínios de referência. Um único blog (<code>pinkbelezura.com.br</code>) responde por 11.313 dos 13.436 links. Faltam links de imprensa e de parceiros B2B. Hoje só aparecem ABAD, Guia da Farmácia e Brazil Beauty News.</li>
-      <li><strong>Domínio antigo: o valor já foi transferido.</strong> Dos 203 domínios que linkam o <code>marciaonline.com.br</code>, quase todos apontam para a home, que já redireciona com 301. As URLs antigas de produto (<code>*.html</code> do Magento) dão 404 e não têm nenhum link externo. Parte dos links restantes é spam de redes de backlinks. O redirecionamento um a um das URLs antigas, que o plano anterior previa, tem pouco retorno. A prioridade é tirar do Google as URLs <code>index.php/…</code> que ainda caem na página bloqueada.</li>
-      <li>O título de todas as páginas termina em "Marcia Online", e o da home é só isso. A home não tem meta description e tem o H1 vazio. 19 links do menu apontam para URLs geradas como <code>/categoria/None-2023-06-09-11-53-04.html</code>, e uma delas já aparece no Google ("marcia importados"). A categoria HIDRASHOCK abre vazia.</li>
-      <li>Nem a home, nem a página de produto, nem a de coloração têm dados estruturados de produto (<code>schema.org/Product</code>). O blog tem (artigo, FAQ e breadcrumb). Salon Line, Bio Extratus e Skafe já publicam dados de produto nas suas lojas.</li>
-      <li>Mesmo na busca pela marca o espaço é dividido: em "descolorante márcia" o site aparece em 1º, mas 6 dos 8 resultados são de farmácias e revendas. Em "creme para cachos barato", a Márcia não aparece, e a Salon Line sim.</li>
-      <li>Busca paga: o único anúncio visto pelo Semrush em 12 meses foi na marca de um concorrente (ver achado 1). Em "tinta de cabelo" e "pó descolorante", o Semrush não registra nenhum anúncio de texto no Google hoje (anúncios do Shopping não entram nessa contagem). O custo estimado do clique vai de US$ 0,08 a US$ 0,26.</li>
-      <li>Segundo o Similarweb, 83% das visitas saem na primeira página, e a visita média dura 32 segundos. Dois produtos têm o mesmo nome, "Creme de Finalização Aney Óleo de Coco", um a R$ 13,94 e outro a R$ 30,74.</li>
-    </ul>
-    <div class="pair">
-      <figure><img src="img/hidrashock.jpg" alt="Categoria HIDRASHOCK exibindo a mensagem Não existem produtos nessa categoria" loading="lazy" width="1100" height="450"><figcaption>Categoria do menu principal, aberta pela URL "None-2023-06-09".</figcaption></figure>
-      <figure><img src="img/bloqueado.jpg" alt="Página de erro Ops, seu request foi bloqueado por segurança" loading="lazy" width="1100" height="402"><figcaption>Destino de uma URL antiga do marciaonline.com.br que ainda aparece na busca do Google.</figcaption></figure>
-    </div>
+  </article>
 
-    <h3 style="margin-top:8px">4a. Qualidade do conteúdo: o produto mais seguro tem a melhor página, e o mais arriscado tem a pior</h3>
-    <p class="read">Demos notas de S (excelente) a D (insuficiente) para três páginas. O foco foi a confiabilidade que o Google chama de E-E-A-T (experiência, especialidade, autoridade e confiança), que pesa mais em produtos químicos aplicados no corpo.</p>
+  <article class="finding">
+    <div class="fhead"><span class="tag warn">Importante</span><span class="tag new">Novo</span><h3>4a. Qualidade do conteúdo: o produto mais seguro tem a melhor página, e o mais arriscado tem a pior</h3></div>
+    <div class="fbody">
+      <div class="ftext">
+      <p class="read">Demos notas de S (excelente) a D (insuficiente) para três páginas. O foco foi a confiabilidade que o Google chama de E-E-A-T (experiência, especialidade, autoridade e confiança), que pesa mais em produtos químicos aplicados no corpo.</p>
+      </div>
+      <aside class="fside">
+      <p class="fix"><b>O que fazer:</b> (1) Reescrever as páginas de coloração e descoloração no padrão da página do shampoo Aney: modo de uso, tempo de pausa, teste de alergia de 48 horas e teste de mecha, composição e responsável técnico. (2) Corrigir o post da tintura em pó e juntar os três posts de guanidina em um.</p>
+      </aside>
+    </div>
     <div class="tbl">
       <table>
         <thead><tr><th>Página</th><th class="num">Nota</th><th>O que funciona</th><th>O que falta</th></tr></thead>
@@ -329,64 +381,93 @@ footer ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px
         <caption>Leitura feita em 29/09/2026 no navegador. Nenhuma das três páginas cita responsável técnico nem registro na Anvisa. As reclamações do Reclame Aqui se concentram justamente em coloração e descoloração (achado 7).</caption>
       </table>
     </div>
-    <p class="fix"><b>O que fazer:</b> (1) Trocar "Marcia Online" por "Márcia Cosméticos" no template, refazer o menu, tirar as categorias vazias e pedir no Search Console a remoção das URLs <code>index.php</code>. (2) Apontar os banners da home para o domínio atual e pôr o blog no menu da loja. (3) Reescrever as páginas de coloração e descoloração no padrão da página do shampoo Aney: modo de uso, tempo de pausa, teste de alergia de 48 horas e teste de mecha, composição e responsável técnico. (4) Criar páginas-guia para "tinta de cabelo", "pó descolorante", "água oxigenada 20 e 30 volumes" e "como pintar o cabelo em casa". (5) Corrigir o post da tintura em pó, juntar os três posts de guanidina em um e ativar o schema de produto na loja.</p>
   </article>
 
   <article class="finding">
     <div class="fhead"><span class="tag warn">Importante</span><span class="tag new">Novo</span><h3>5. Site pesado demais para o celular</h3></div>
-    <p class="read">O Lighthouse em modo celular deu 13/100 de performance, 66 de acessibilidade, 75 de boas práticas e 77 de SEO. A nota exata varia com a rede do teste, mas a causa é estrutural:</p>
-    <ul>
+    <div class="fbody">
+      <div class="ftext">
+      <p class="read">O Lighthouse em modo celular deu 13/100 de performance, 66 de acessibilidade, 75 de boas práticas e 77 de SEO. A nota exata varia com a rede do teste, mas a causa é estrutural:</p>
+      <ul>
       <li>A home tem 6,3 MB e 183 requisições. Os banners são PNG de 1920 px enviados também para o celular, com economia estimada de 2,7 MB.</li>
       <li>Um vídeo do YouTube embutido na home carrega cerca de 1 MB antes de qualquer clique.</li>
       <li>Os ícones de categoria vêm do servidor de um fornecedor (<code>cacalutia.com.br/clientes/marcia/…</code>). Se esse contrato acabar, a home fica sem ícones.</li>
       <li>Há 28 imagens sem texto alternativo, e banners com alt "BANNER 6", "BANNER 8" e "BANNER 10".</li>
     </ul>
-    <p class="fix"><b>O que fazer:</b> converter os banners para WebP em versões para celular, trocar o vídeo embutido por uma imagem com link, hospedar os ícones na própria loja e retirar os pixels duplicados. Hoje os scripts de Meta, Google e TikTok somam cerca de 1 MB na home.</p>
+      </div>
+      <aside class="fside">
+      <p class="fix"><b>O que fazer:</b> converter os banners para WebP em versões para celular, trocar o vídeo embutido por uma imagem com link, hospedar os ícones na própria loja e retirar os pixels duplicados. Hoje os scripts de Meta, Google e TikTok somam cerca de 1 MB na home.</p>
+      </aside>
+    </div>
   </article>
 
   <article class="finding">
     <div class="fhead"><span class="tag warn">Importante</span><span class="tag new">Novo</span><h3>6. O conteúdo voltou, o alcance não</h3></div>
-    <ul>
+    <div class="fbody">
+      <div class="ftext">
+      <ul>
       <li>O Instagram ficou quase quatro meses sem post (de 29/04 a 19/08) e voltou com 29 publicações em seis semanas. A maioria são reels em parceria com microinfluenciadoras de coloração e cachos, marcados como publi.</li>
       <li>Esses reels tiveram de 111 a 3,7 mil visualizações. O engajamento médio (0,23%) é igual ao da Bio Extratus, então o conteúdo funciona. Falta distribuição: nenhum desses reels foi impulsionado, porque não há anúncio ativo.</li>
       <li>O TikTok tem 10 vídeos no total, e o último é de 23/12/2025. Um deles, sobre a Cores Naturais ("cor sem agressão"), fez 29,4 mil visualizações, 370 vezes o número de seguidores. O formato já provou que funciona.</li>
       <li>O Facebook tem 145 mil seguidores e o Instagram 24,4 mil: a base antiga não migrou. O canal do YouTube tem 8 inscritos.</li>
       <li>A frase "+ de 90 anos cuidando da sua beleza" está nas bios do Instagram e do TikTok, mas não aparece na página "Quem somos" do site.</li>
     </ul>
-    <figure><img src="img/tiktok.jpg" alt="Perfil da Márcia Cosméticos no TikTok com 79 seguidores e link para marciaonline.com.br" loading="lazy" width="900" height="230"><figcaption>Perfil oficial no TikTok: 79 seguidores, bio com "90 anos" e link para o domínio antigo.</figcaption></figure>
-    <p class="fix"><b>O que fazer:</b> usar os melhores reels das influenciadoras como anúncios de parceria (a marca impulsiona o post da criadora), retomar o TikTok com a série de coloração que já deu 29 mil visualizações e levar a história dos 90 anos para o site.</p>
+      </div>
+      <aside class="fside">
+      <figure><img src="img/tiktok.jpg" alt="Perfil da Márcia Cosméticos no TikTok com 79 seguidores e link para marciaonline.com.br" loading="lazy" width="900" height="230"><figcaption>Perfil oficial no TikTok: 79 seguidores, bio com "90 anos" e link para o domínio antigo.</figcaption></figure>
+      <p class="fix"><b>O que fazer:</b> usar os melhores reels das influenciadoras como anúncios de parceria (a marca impulsiona o post da criadora), retomar o TikTok com a série de coloração que já deu 29 mil visualizações e levar a história dos 90 anos para o site.</p>
+      </aside>
+    </div>
   </article>
 
   <article class="finding">
     <div class="fhead"><span class="tag warn">Importante</span><span class="tag new">Novo</span><h3>7. Reputação boa, com um risco na química</h3></div>
-    <ul>
+    <div class="fbody">
+      <div class="ftext">
+      <ul>
       <li>No Reclame Aqui, nos 12 meses até 31/08/2026: nota 8,5, 25 reclamações, 96% respondidas, 80% resolvidas, resposta média em 1 dia e 9 horas. A empresa não é verificada.</li>
       <li>As reclamações se concentram em descolorante e tintura: irritação na pele e nos olhos, cor diferente da prometida, "corpo estranho" no frasco.</li>
       <li>Uma reclamação diz que o WhatsApp de atendimento não funciona. O link de WhatsApp do site usa o número <code>5502199118301</code>, com um zero antes do DDD e só oito dígitos, formato que o WhatsApp não reconhece.</li>
     </ul>
-    <p class="fix"><b>O que fazer:</b> corrigir o número do WhatsApp, verificar a empresa no Reclame Aqui e publicar conteúdo de uso seguro (teste de mecha e de alergia) nas páginas de coloração e descoloração. Isso reduz a reclamação e melhora a conversão da categoria.</p>
+      </div>
+      <aside class="fside">
+      <p class="fix"><b>O que fazer:</b> corrigir o número do WhatsApp, verificar a empresa no Reclame Aqui e publicar conteúdo de uso seguro (teste de mecha e de alergia) nas páginas de coloração e descoloração. Isso reduz a reclamação e melhora a conversão da categoria.</p>
+      </aside>
+    </div>
   </article>
 
   <article class="finding">
     <div class="fhead"><span class="tag warn">Importante</span><span class="tag new">Novo</span><h3>8. No Mercado Livre, o revendedor já faz o que o site não faz</h3></div>
-    <p class="read">Buscamos "marcia cosmeticos" no Mercado Livre e analisamos as duas primeiras páginas (94 anúncios). O primeiro resultado é de outra marca (Bothânico). Entre os 25 anúncios de produtos Márcia:</p>
-    <ul>
+    <div class="fbody">
+      <div class="ftext">
+      <p class="read">Buscamos "marcia cosmeticos" no Mercado Livre e analisamos as duas primeiras páginas (94 anúncios). O primeiro resultado é de outra marca (Bothânico). Entre os 25 anúncios de produtos Márcia:</p>
+      <ul>
       <li><strong>19 são kits</strong> (2, 3 ou 6 unidades, de R$ 22 a R$ 156) e <strong>24 têm frete grátis</strong>. É exatamente a combinação que falta no site.</li>
       <li>A maior parte é do revendedor MAR &amp; CIA, que tem inclusive loja oficial no Mercado Livre (como Perfumaria Irene). Há um vendedor chamado "MARCIA COSMETICOS", com 3 anúncios e sem selo de loja oficial.</li>
       <li>As vendas por anúncio são baixas (no máximo 50 unidades), e a linha Aney quase não aparece na busca pela marca.</li>
       <li>A loja "marcia_cosmeticos" na Shopee aparece como inativa, e na Amazon os produtos são vendidos por terceiros.</li>
     </ul>
-    <p class="fix"><b>O que fazer:</b> confirmar se o vendedor "MARCIA COSMETICOS" é da marca e, se for, pedir o selo de loja oficial. Copiar no site a lógica dos kits com frete grátis que o revendedor já usa, e alinhar com a Navarro uma política de preço mínimo.</p>
+      </div>
+      <aside class="fside">
+      <p class="fix"><b>O que fazer:</b> confirmar se o vendedor "MARCIA COSMETICOS" é da marca e, se for, pedir o selo de loja oficial. Copiar no site a lógica dos kits com frete grátis que o revendedor já usa, e alinhar com a Navarro uma política de preço mínimo.</p>
+      </aside>
+    </div>
   </article>
 
   <article class="finding">
     <div class="fhead"><span class="tag warn">Importante</span><h3>9. PDV e digital se ignoram (mantido do documento de 24/09)</h3></div>
-    <ul>
+    <div class="fbody">
+      <div class="ftext">
+      <ul>
       <li>Onze estados aparecem com "Nenhum ponto de venda cadastrado", e a página pede contato em vez de oferecer a loja online.</li>
       <li>A lista é em texto corrido, sem busca por CEP. Há erros de cadastro, como um DDD 95 listado no Amazonas e Brasília dentro de Goiás.</li>
       <li>A página publica e-mails pessoais de lojistas (Gmail e Hotmail). Isso é um risco de LGPD, não só de UX.</li>
     </ul>
-    <p class="fix"><b>O que fazer:</b> nos estados sem PDV, trocar a mensagem por "Compre online com frete para o seu CEP" e um link para o kit mais vendido. Tirar os e-mails pessoais do ar esta semana.</p>
+      </div>
+      <aside class="fside">
+      <p class="fix"><b>O que fazer:</b> nos estados sem PDV, trocar a mensagem por "Compre online com frete para o seu CEP" e um link para o kit mais vendido. Tirar os e-mails pessoais do ar esta semana.</p>
+      </aside>
+    </div>
   </article>
 </section>
 
@@ -411,7 +492,7 @@ footer ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px
     <span class="eyebrow">Posicionamento proposto</span>
     <h2>A marca que ensina a acertar a cor em casa</h2>
     <p class="read">Partimos da hipótese do time: tradição de 90 anos, fábrica própria, preço justo e liderança em coloração acessível. Testamos cada parte contra os dados deste documento.</p>
-    <div class="check read">
+    <div class="check">
       <span class="v ok">Confirmado</span><p><strong>Tradição como diferencial.</strong> Dos 150 anúncios ativos dos concorrentes, só 6 falam de idade da marca, todos da Lola ("15 anos"). Nenhum fala de fábrica. Os 90 anos da Márcia não têm concorrente. Hoje, porém, eles só aparecem nas bios do Instagram e do TikTok.</p>
       <span class="v ok">Confirmado</span><p><strong>Coloração como espaço livre.</strong> Só 4 dos 150 anúncios falam de cor. Na busca, "tinta de cabelo" (49,5 mil buscas por mês) e "pó descolorante" (33,1 mil) não têm nenhum dos concorrentes analisados no top 20.</p>
       <span class="v part">Em parte</span><p><strong>Preço justo.</strong> O preço de prateleira é baixo (Cores Nativas a R$ 18,94, rotina Aney completa a R$ 49,28). Mas 35 dos 150 anúncios já brigam por desconto e custo-benefício, e fora do RJ o frete mais que dobra a conta (achado 3). Preço sustenta a mensagem, mas não a lidera.</p>

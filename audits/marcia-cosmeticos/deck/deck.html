@@ -253,6 +253,41 @@ code,kbd{font-family:var(--mono);font-size:.9em}
 .teto{background:var(--capa);color:var(--branco);border-radius:var(--raio);padding:20px 26px;font-family:var(--display);font-weight:700;font-size:clamp(20px,2vw,28px);letter-spacing:-.6px;margin-top:10px}
 .slide.denso .tab td{padding:8px 14px;font-size:14px}
 @media(max-height:820px){.tab td{padding:7px 14px;font-size:14px}.card{padding:18px}}
+
+/* Ocupação do slide: conteúdo centrado na vertical e escala tipográfica pela altura da tela. */
+.slide:not(.capa-slide){display:flex;flex-direction:column}
+.slide:not(.capa-slide) .content{margin:auto;width:100%}
+.slide .content > h2,.slide.denso .content > h2{font-size:clamp(26px,4.6vh,48px);max-width:30em;margin-bottom:clamp(10px,2.2vh,24px)}
+.slide .content > .eyebrow{margin-bottom:clamp(10px,1.8vh,20px)}
+.slide .tab,.slide.denso .tab{font-size:clamp(14px,2.15vh,20px);margin-top:clamp(10px,1.6vh,18px)}
+.slide .tab td,.slide.denso .tab td{padding:clamp(7px,1.45vh,15px) 18px;font-size:inherit}
+.slide .tab th{padding:clamp(8px,1.3vh,13px) 18px;font-size:clamp(10px,1.35vh,12px)}
+.slide .card,.slide.denso .card{padding:clamp(16px,2.8vh,30px) clamp(18px,1.8vw,30px)}
+.slide .card h3{font-size:clamp(19px,2.9vh,28px);margin-bottom:clamp(8px,1.5vh,16px)}
+.slide .card ul{font-size:clamp(14px,2.2vh,20px);line-height:1.45}
+.slide .card ul li{margin-bottom:clamp(3px,.9vh,10px)}
+.slide .card .num{font-size:clamp(12px,1.6vh,15px);margin-bottom:clamp(6px,1.2vh,12px)}
+.slide .kpis,.slide.denso .kpis{gap:clamp(12px,1.6vw,22px);margin-top:clamp(12px,2.2vh,26px)}
+.slide .kpi,.slide.denso .kpi{padding:clamp(16px,3vh,32px) clamp(18px,1.8vw,28px)}
+.slide .kpi b,.slide.denso .kpi b{font-size:clamp(34px,7vh,72px)}
+.slide .kpi span,.slide.denso .kpi span{font-size:clamp(14px,2.2vh,20px);line-height:1.4}
+.slide .content > .takeaway,.slide.denso .content > .takeaway{font-size:clamp(17px,2.7vh,26px);margin-top:clamp(12px,2.6vh,30px);line-height:1.3}
+.slide .content > .footnote,.slide.denso .content > .footnote{font-size:clamp(11px,1.5vh,14px);margin-top:clamp(8px,1.4vh,16px)}
+.slide .teto{font-size:clamp(20px,3.6vh,36px);padding:clamp(16px,3vh,30px) 28px}
+.slide .grid{gap:clamp(12px,1.6vw,22px)}
+.nota{font-size:clamp(28px,4.6vh,46px)}
+#tecnico .tab{font-size:clamp(13px,1.8vh,18px)}
+#tecnico .tab td{padding:clamp(5px,.95vh,11px) 16px}
+#tecnico .content > h2{font-size:clamp(24px,4vh,42px)}
+:is(#resumo,#midia,#redes,#concorrentes) .content > h2{font-size:clamp(28px,5.6vh,58px)}
+:is(#resumo,#midia,#redes,#concorrentes) .kpi b{font-size:clamp(40px,9.5vh,100px)}
+:is(#resumo,#midia,#redes,#concorrentes) .kpi span{font-size:clamp(15px,2.6vh,24px)}
+:is(#resumo,#midia,#redes,#concorrentes) .kpi small{font-size:clamp(11px,1.45vh,13px);margin-top:clamp(12px,2vh,20px)}
+:is(#resumo,#midia,#redes,#concorrentes) .kpi{padding:clamp(20px,4vh,44px) clamp(20px,2vw,32px)}
+#posicionamento .card ul,#mensuracao .card ul{font-size:clamp(15px,2.6vh,23px)}
+#posicionamento .content > h2{font-size:clamp(28px,5.6vh,58px)}
+#marketplaces .kpi b{font-size:clamp(30px,5.4vh,60px)}
+#marketplaces .kpi{padding:clamp(14px,2.2vh,26px) clamp(18px,1.8vw,28px)}
 </style></head>
 <body>
 
