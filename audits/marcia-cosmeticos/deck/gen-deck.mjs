@@ -69,6 +69,25 @@ S('mensuracao', 'Mensuração', `
   <p class="takeaway">Restringir o gatilho ao pedido concluído e usar o evento de compra nativo, com valor e ID.</p>
   <p class="footnote">Fonte: container público do GTM, versão 8, lido em 28/09/2026.</p>`),
 
+S('tecnico', 'Erros técnicos', `
+  <p class="eyebrow">Site · erros e otimizações técnicas</p>
+  <h2>Oito correções técnicas, a maioria <em>de baixo esforço</em>.</h2>
+  <table class="tab rv">
+    <thead><tr><th>O que está errado</th><th>Correção</th><th>Esforço</th></tr></thead>
+    <tbody>
+      <tr><td>Título "Marcia Online" em todas as páginas, H1 da home vazio, sem meta description</td><td>Ajustar o template com "Márcia Cosméticos"</td><td>Baixo</td></tr>
+      <tr><td>19 links do menu levam a URLs "None-2023-06-09…". A categoria Hidrashock abre vazia</td><td>Refazer o menu e tirar as vazias do índice</td><td>Baixo</td></tr>
+      <tr><td>7 banners da home apontam para marciaonline.com.br. URLs index.php antigas caem em "Acesso bloqueado"</td><td>Trocar os links e pedir remoção no Search Console</td><td>Baixo</td></tr>
+      <tr><td>Home de 6,3 MB e 183 requisições, com banners PNG de 1920 px também no celular</td><td>WebP com versão para celular (economia estimada de 2,7 MB)</td><td>Médio</td></tr>
+      <tr><td>YouTube embutido (cerca de 1 MB) e pixels em dobro (cerca de 1 MB de scripts)</td><td>Trocar o vídeo por imagem com link e remover os pixels órfãos</td><td>Baixo</td></tr>
+      <tr><td>Sem dados estruturados de produto (preço, estoque, nota)</td><td>Ativar schema Product</td><td>Médio</td></tr>
+      <tr><td>Ícones hospedados no servidor de um fornecedor e 28 imagens sem texto alternativo</td><td>Hospedar na loja e descrever as imagens</td><td>Baixo</td></tr>
+      <tr><td>Conversão do Google Ads em qualquer "checkout" e WhatsApp com número inválido</td><td>Gatilho no pedido concluído e número corrigido</td><td>Baixo</td></tr>
+    </tbody>
+  </table>
+  <p class="takeaway">Lighthouse no celular: 13/100. Tudo isso se resolve em 30 a 60 dias, sem verba de mídia.</p>
+  <p class="footnote">Fontes: navegação no site, Lighthouse 12 mobile e leitura do container GTM-MKK6HLCD (28–29/09/2026). A nota do Lighthouse varia com a rede do teste. Peso e requisições são medidas diretas.</p>`, 'denso'),
+
 S('frete', 'Frete', `
   <p class="eyebrow">Oferta · frete</p>
   <h2>Fora do Rio, o frete custa <em>mais que o produto</em>.</h2>
@@ -84,6 +103,26 @@ S('frete', 'Frete', `
   </table>
   <p class="takeaway">Uma régua nacional de frete grátis visível no topo (a Salon Line usa R$ 99) e kits por rotina acima dela.</p>
   <p class="footnote">Fonte: calculadora do site, Shampoo Aney Brilho Molhado 300 ml (R$ 11,94), 1 unidade, CEPs centrais, 28/09/2026. No Mercado Livre, 24 de 25 anúncios Márcia têm frete grátis (Apify, 29/09/2026).</p>`, 'denso'),
+
+S('cro', 'CRO e ticket', `
+  <p class="eyebrow">Conversão · ticket, packs e cross-sell</p>
+  <h2>O ticket é baixo demais para o frete. <em>Pack é a saída.</em></h2>
+  <div class="grid two">
+    <div class="card rv"><h3>O que existe hoje</h3><ul>
+      <li>Itens de R$ 4,95 (AOX 70 ml) a R$ 18,94 (Cores Nativas): para chegar a R$ 99, seriam de 6 a 20 itens.</li>
+      <li>"Kits Ofertas" tem 1 kit só: Cachos Perfeitos, R$ 49,28.</li>
+      <li>O combo de 4 itens com 10% só aparece na página do Aney.</li>
+      <li>Na coloração, os "relacionados" são outras cores e formatos, que substituem o produto. Não sugerem AOX, luvas nem pós-química.</li>
+      <li>83% das visitas saem na primeira página, com 32 segundos de média.</li></ul></div>
+    <div class="card rv d1"><h3>O que testar</h3><ul>
+      <li><b>Par de descoloração:</b> pó 50 g + AOX 70 ml (R$ 17,89 avulsos), com a volumagem certa já escolhida.</li>
+      <li><b>Kit cor em casa:</b> coloração + shampoo e máscara pós-química + guia de uso.</li>
+      <li><b>Leve 3:</b> o revendedor vende 3 descolorantes de 20 g por R$ 23,35 com frete grátis no Mercado Livre. No site, os mesmos 3 saem por R$ 23,82 mais o frete.</li>
+      <li>Barra "faltam R$ X para o frete grátis" fixa no topo e no carrinho.</li>
+      <li>Complementares no carrinho, sempre "o que usar junto".</li></ul></div>
+  </div>
+  <p class="takeaway">A régua de frete deve ser calibrada pelo ticket médio real, e os packs desenhados para passar dela.</p>
+  <p class="footnote">Fontes: preços do site em 29/09/2026; Mercado Livre via Apify (29/09/2026); Similarweb, agosto de 2026 (estimativa). O ticket médio real sai do painel da Loja Integrada.</p>`, 'denso'),
 
 S('busca', 'Busca orgânica', `
   <p class="eyebrow">SEO · o que as pessoas buscam</p>
@@ -102,24 +141,23 @@ S('busca', 'Busca orgânica', `
   <p class="takeaway">Salon Line, Skala, Bio Extratus e Beauty Color também não estão no top 20 de tinta e descolorante. O espaço está livre.</p>
   <p class="footnote">Fonte: Semrush, base Brasil, 29/09/2026 (estimativas). Tráfego orgânico da Márcia: ~5,7 mil/mês em jul/2022, 237 em dez/2023 (troca de loja e domínio), ~1,3 mil hoje.</p>`, 'denso'),
 
-S('site', 'Site e domínios', `
-  <p class="eyebrow">SEO · a casa por dentro</p>
-  <h2>O site ainda se chama <em>"Marcia Online"</em> e aponta para o domínio antigo.</h2>
+S('autoridade', 'Autoridade e blog', `
+  <p class="eyebrow">SEO · autoridade e conteúdo</p>
+  <h2>Pouca autoridade, e o blog que <em>já traz tráfego</em> está solto.</h2>
   <div class="grid two">
-    <div class="card rv"><h3>No site</h3><ul>
-      <li>Título da home: "Marcia Online", com H1 vazio e sem descrição.</li>
-      <li>19 links do menu levam a URLs "None-2023-06-09…". A categoria Hidrashock abre vazia.</li>
-      <li>Os 7 banners da home apontam para marciaonline.com.br.</li>
-      <li>O blog não tem nenhum link na loja, mas já traz cerca de 200 visitas por mês.</li>
-      <li>Lighthouse no celular: 13/100. A home pesa 6,3 MB.</li></ul></div>
-    <div class="card rv d1"><h3>Fora do site</h3><ul>
-      <li>Authority Score 11, com 283 domínios de referência.</li>
-      <li>84% dos backlinks vêm de um único blog.</li>
-      <li>Domínio antigo: o valor está na home, que já redireciona. As URLs antigas de produto não têm links, então o 301 um a um tem pouco retorno.</li>
-      <li>Prioridade: tirar do Google as URLs index.php que caem em "Acesso bloqueado".</li></ul></div>
+    <div class="card rv"><h3>Autoridade</h3><ul>
+      <li>Authority Score 11 (de 0 a 100), com 283 domínios de referência.</li>
+      <li>84% dos backlinks vêm de um único blog de beleza.</li>
+      <li>Os links de B2B e imprensa se resumem a ABAD, Guia da Farmácia e Brazil Beauty News.</li>
+      <li>Domínio antigo: o valor está na home, que já redireciona. O 301 um a um tem pouco retorno.</li></ul></div>
+    <div class="card rv d1"><h3>Blog</h3><ul>
+      <li>129 palavras e cerca de 200 visitas por mês, com "5.0 coloração" em 6º e "guanidina o que é" em 8º.</li>
+      <li>Nenhum link da loja para o blog.</li>
+      <li>Três posts sobre guanidina competem entre si.</li>
+      <li>Categorias trocadas: o guia de Cores Nativas está em "Mãos e pés".</li></ul></div>
   </div>
-  <p class="takeaway">São correções de template e de configuração, para 30 dias, sem verba de mídia.</p>
-  <p class="footnote">Fontes: navegação no site e Lighthouse 12 mobile (28–29/09/2026); Semrush Backlinks e Organic Research (29/09/2026).</p>`, 'denso'),
+  <p class="takeaway">O blog é o único ativo de busca que cresce. Precisa de menu, de revisão técnica e de assuntos escolhidos pelas buscas de cor.</p>
+  <p class="footnote">Fontes: Semrush Backlinks e Organic Research, base Brasil (29/09/2026); navegação no blog em 29/09/2026.</p>`, 'denso'),
 
 S('conteudo', 'Qualidade de conteúdo', `
   <p class="eyebrow">Conteúdo · confiança em química capilar</p>
@@ -146,6 +184,23 @@ S('redes', 'Redes sociais', `
   <p class="takeaway">A matéria-prima existe: reels de criadoras e uma série de coloração que já provou alcance. Falta distribuir.</p>
   <p class="footnote">Fonte: perfis públicos coletados via Apify em 29/09/2026. Engajamento é a média de curtidas e comentários dos 12 posts mais recentes dividida pelos seguidores.</p>`),
 
+S('benchmark', 'Benchmark', `
+  <p class="eyebrow">Benchmark · Márcia e cinco concorrentes</p>
+  <h2>O engajamento é igual ao dos concorrentes. <em>O alcance é de outro tamanho.</em></h2>
+  <table class="tab rv">
+    <thead><tr><th>Marca</th><th class="n">Visitas/mês</th><th class="n">Orgânico Google</th><th class="n">Instagram</th><th class="n">Engaj.</th><th class="n">TikTok</th><th class="n">Anúncios Meta</th><th>Frete grátis</th></tr></thead>
+    <tbody>
+      <tr class="nos"><td>Márcia</td><td class="n">4,4 mil</td><td class="n">1,3 mil</td><td class="n">24,4 mil</td><td class="n">0,23%</td><td class="n">79</td><td class="n">0</td><td>Só RJ, sem valor</td></tr>
+      <tr><td>Salon Line</td><td class="n">2,29 mi</td><td class="n">570 mil</td><td class="n">4,6 mi</td><td class="n">0,68%</td><td class="n">4,9 mi</td><td class="n">~1.600</td><td>Acima de R$ 99</td></tr>
+      <tr><td>Bio Extratus</td><td class="n">443 mil</td><td class="n">167 mil</td><td class="n">1,8 mi</td><td class="n">0,23%</td><td class="n">579 mil</td><td class="n">~56</td><td>Cupom acima de R$ 200</td></tr>
+      <tr><td>Lola</td><td class="n">195 mil</td><td class="n">292 mil</td><td class="n">1,3 mi</td><td class="n">0,10%</td><td class="n">1,1 mi</td><td class="n">~35</td><td>n/d</td></tr>
+      <tr><td>Skala</td><td class="n">61 mil</td><td class="n">50 mil</td><td class="n">2,1 mi</td><td class="n">0,40%</td><td class="n">1,5 mi</td><td class="n">38</td><td>n/d</td></tr>
+      <tr><td>Beauty Color</td><td class="n">n/d</td><td class="n">30 mil</td><td class="n">224 mil</td><td class="n">n/d</td><td class="n">n/d</td><td class="n">0</td><td>n/d</td></tr>
+    </tbody>
+  </table>
+  <p class="takeaway">A Márcia não perde em conteúdo. Perde em distribuição: zero anúncio, busca só de marca e uma base 70 vezes menor que a da Bio Extratus.</p>
+  <p class="footnote">Visitas: Similarweb, agosto de 2026, todos os canais. Orgânico: Semrush, setembro de 2026, só busca orgânica. As duas são estimativas e divergem (na Lola, o orgânico supera o total). Redes e anúncios: perfis públicos e Biblioteca da Meta via Apify, 28–29/09/2026.</p>`, 'denso'),
+
 S('concorrentes', 'Concorrentes', `
   <p class="eyebrow">Mercado · 150 anúncios ativos de 6 concorrentes</p>
   <h2>Os concorrentes brigam por cachos e desconto. <em>Cor e segurança estão sem dono.</em></h2>
@@ -156,6 +211,27 @@ S('concorrentes', 'Concorrentes', `
   </div>
   <p class="takeaway">Na mídia paga e na busca orgânica, a categoria em que a Márcia tem 90 anos de história está livre.</p>
   <p class="footnote">Fonte: Biblioteca de Anúncios da Meta via Apify, 29/09/2026 (Lola, Salon Line, Bio Extratus, Skala, Embelleze e Skafe; até 30 por marca). Busca: Semrush, base Brasil, 29/09/2026.</p>`),
+
+S('marketplaces', 'Marketplaces', `
+  <p class="eyebrow">Canais · marketplaces</p>
+  <h2>No Mercado Livre, um revendedor <em>é a Márcia</em>.</h2>
+  <div class="kpis">
+    <div class="kpi rv"><b>21 de 25</b><span>anúncios de produtos Márcia são do revendedor MAR &amp; CIA, que tem loja oficial no ML como Perfumaria Irene.</span><small>Vendedores</small></div>
+    <div class="kpi rv d1"><b>24 de 25</b><span>anúncios têm frete grátis, e 19 são kits de 2, 3 ou 6 unidades (R$ 22 a R$ 156). É o que falta no site.</span><small>Oferta</small></div>
+    <div class="kpi rv d2"><b>16 de 25</b><span>anúncios são de Loção Capilar. A linha Aney quase não aparece na busca pela marca.</span><small>Mix</small></div>
+  </div>
+  <div class="grid two" style="margin-top:14px">
+    <div class="card rv"><ul>
+      <li>Um vendedor chamado "MARCIA COSMETICOS" tem 3 anúncios, sem selo de loja oficial.</li>
+      <li>O primeiro resultado da busca "marcia cosmeticos" é de outra marca.</li>
+      <li>Shopee: loja "marcia_cosmeticos" inativa. Amazon: só terceiros. Magalu: não verificada.</li></ul></div>
+    <div class="card rv d1"><ul>
+      <li>Confirmar se o "MARCIA COSMETICOS" é da marca e pedir o selo oficial.</li>
+      <li>Decidir com a Navarro: loja oficial própria ou revendedor autorizado, com preço mínimo.</li>
+      <li>Levar para o site a lógica de kit com frete grátis que o revendedor já provou.</li></ul></div>
+  </div>
+  <p class="takeaway">O canal já vende kit com frete grátis. A decisão é quem controla o preço e a marca nele.</p>
+  <p class="footnote">Fonte: busca "marcia cosmeticos" no Mercado Livre, 2 primeiras páginas (94 anúncios), via Apify em 29/09/2026. Vendas por anúncio: no máximo 50 unidades.</p>`, 'denso'),
 
 S('hipotese', 'Hipótese testada', `
   <p class="eyebrow">Posicionamento · a hipótese contra os dados</p>
