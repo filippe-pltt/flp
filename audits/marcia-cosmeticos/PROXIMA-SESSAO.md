@@ -17,6 +17,7 @@ Briefing para uma nova sessão do Claude Code continuar a auditoria externa de m
 
 | O quê | Onde |
 |---|---|
+| Sessão anterior (histórico completo) | https://claude.ai/code/session_01MD8cVYnyGEYivEhBJ4Q7xi |
 | Relatório publicado (v3.1) | https://claude.ai/artifact/DxoGW75LcurXu6JjdfH9Cd |
 | Fonte do relatório | `audits/marcia-cosmeticos/audit-marcia.html` e `img/` (6 prints) |
 | Consultas Apify | `audits/marcia-cosmeticos/apify/run.py`, uso: `python3 run.py [nome]` |
