@@ -2,6 +2,15 @@
 
 Briefing para uma nova sessão do Claude Code continuar a auditoria externa de marketing digital da Márcia Cosméticos (marciacosmeticos.com.br) sem refazer o que já foi feito.
 
+## Status em 29/09/2026 (sessão 2)
+
+Feito: tarefas 1 a 5 de "O que fazer agora".
+- Relatório v4 publicado no mesmo link, com Semrush no achado 4, o subitem 4a de qualidade de conteúdo, a seção nova "Posicionamento" antes do Plano, o plano revisto e o "Método e limites" atualizado.
+- Dados Semrush em `semrush/README.md`.
+- Deck para o CEO no modelo de slide da Made: `deck/deck.html` (12 slides mais a capa), gerado por `deck/gen-deck.mjs` com o chassi em `deck/made-slide/` (baixado da CDN). PDF em `deck/deck.pdf`.
+- Os plugins Product Marketing e website-quality-checker não estavam na sessão. O posicionamento e as notas de S a D foram feitos à mão, com o mesmo método (hipótese testada, casa de mensagens, mapa de alternativas, E-E-A-T).
+- O proxy do ambiente mudou de porta: hoje é o que está em `$HTTPS_PROXY` (40647), e não 38185.
+
 ## Prompt para colar na sessão nova
 
 > Leia `audits/marcia-cosmeticos/PROXIMA-SESSAO.md` na branch `claude/auditoria-marketing-digital-btqoj9` e execute as tarefas da seção "O que fazer agora", na ordem. Atualize o relatório publicado em https://claude.ai/artifact/DxoGW75LcurXu6JjdfH9Cd (leia o artifact antes de publicar) e faça commit e push na mesma branch.

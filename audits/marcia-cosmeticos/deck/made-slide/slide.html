@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{TITULO}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+{{BASE_CSS}}
+
+/* ---- camada de navegação: só do chassi de slide ----
+   .top reusa .topbar do catálogo (base.css) para altura, padding, flex, borda,
+   fundo e o svg — aqui só a diferença: o cabeçalho vira fixo e ganha empilhamento. */
+.top{position:fixed;inset:0 0 auto;z-index:5}
+.slide{position:absolute;inset:82px 0 69px;overflow:auto;visibility:hidden;opacity:0;
+  pointer-events:none;transition:opacity .4s ease,transform .4s ease;
+  transform:translateY(16px);padding:3.5vh 6vw}
+.slide.active{visibility:visible;opacity:1;pointer-events:auto;transform:none}
+.slide .content{max-width:1370px;margin:auto}
+/* a primeira slide é a capa — reusa .capa-wrap/.capa do catálogo (base.css),
+   só sem o padding e a moldura de conteúdo que as demais slides têm */
+.slide.capa-slide{padding:0}
+.slide.capa-slide .capa-wrap,.slide.capa-slide .capa{height:100%}
+.bottom{height:69px;padding:0 4.5vw;display:flex;align-items:center;justify-content:space-between;
+  border-top:1px solid var(--line);position:fixed;inset:auto 0 0;background:var(--paper);z-index:5}
+.bottom .label{font-size:13px;color:var(--muted);max-width:40ch;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nav{display:flex;gap:10px}
+.nav button,[data-sumario]{border:1px solid var(--line);border-radius:40px;
+  background:transparent;padding:9px 15px;font-size:14px}
+.progress{position:fixed;left:0;right:0;bottom:69px;height:2px;background:var(--line);z-index:6}
+.progress span{display:block;height:100%;background:var(--purple);width:0;transition:width .35s ease}
+#sumario{border:1px solid var(--line);border-radius:var(--raio);padding:32px;max-width:640px}
+#sumario::backdrop{background:rgba(24,25,28,.45)}
+#sumario button{display:block;width:100%;text-align:left;border:0;background:transparent;
+  padding:12px 0;border-bottom:1px solid var(--line);font-size:17px}
+
+/* as animações e os gráficos migram intactos do chassi de rolagem */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv.visivel{opacity:1;transform:none}
+.rv.d1{transition-delay:.12s}
+.rv.d2{transition-delay:.24s}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+@media(max-width:760px){
+  /* .topbar já cobre altura/padding/svg no mobile (base.css) */
+  .slide{inset:68px 0 65px;padding:30px 24px}
+  .bottom{height:65px;padding:0 20px}
+  .progress{bottom:65px}
+  .bottom .label{max-width:18ch;font-size:11px}
+}
+@media print{
+  .top,.bottom,.progress,dialog{display:none!important}
+  .slide{position:relative!important;inset:auto!important;display:block!important;
+    visibility:visible!important;opacity:1!important;transform:none!important;
+    overflow:visible;min-height:185mm;break-after:page;padding:15mm 10mm}
+  .slide:last-of-type{break-after:auto}
+  .rv{opacity:1!important;transform:none!important}
+}
+</style></head>
+<body>
+
+<header class="top topbar">{{LOGO_SVG}}<button data-sumario>Sumário</button></header>
+
+<div class="slide capa-slide" id="capa" data-rotulo="Capa">
+  <div class="capa-wrap"><header class="capa">
+    <div class="chead">{{LOGO_SVG}}<span>× {{CLIENTE}}</span></div>
+    <p class="ceyebrow">{{CONTEXTO}}</p>
+    <h1 class="ctitle">{{TITULO}}</h1>
+  </header></div>
+</div>
+
+{{SLIDES}}
+
+<div class="progress"><span></span></div>
+<footer class="bottom">
+  <span class="label"></span>
+  <nav class="nav">
+    <button data-ir="0">Início</button>
+    <button onclick="history.back()">Voltar</button>
+  </nav>
+</footer>
+
+<dialog id="sumario"><h3>Sumário</h3><div id="sumario-itens"></div></dialog>
+
+<script>{{SLIDE_JS}}</script>
+</body></html>

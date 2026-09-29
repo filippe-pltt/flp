@@ -1,0 +1,115 @@
+/* Superfície clara do DS MADE — única fonte do CSS comum das páginas de entrega.
+   Regra: componente não muda de HTML entre as superfícies; muda só a camada de cor.
+   Spec: docs/superpowers/specs/2026-09-21-superficie-clara-entrega-design.md */
+
+:root{
+  /* superfície clara */
+  --paper:#f7f7fa; --ink:#18191c; --muted:#60636c; --line:#dedee5; --card:#ffffff;
+  /* herdados do catálogo MADE, sem alteração */
+  --purple:#5a53f7; --purple-2:#4e47ec; --accent:#36efa2; --on-accent:#1c1786;
+  /* capa escura — cada valor é token, para não haver hex solto no arquivo */
+  --capa:#19191f; --capa-eyebrow:#b7b7c2; --capa-realce:#b4afff; --capa-corpo:#cccbd7;
+  --note-fundo:#eeeef7; --branco:#ffffff;
+  --display:'Sora',sans-serif;
+  --body:'Instrument Sans',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+  --raio:14px;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);-webkit-font-smoothing:antialiased}
+button,a{-webkit-tap-highlight-color:transparent}
+button{font:inherit;cursor:pointer}
+a{color:inherit}
+button:focus-visible,a:focus-visible{outline:3px solid var(--purple);outline-offset:4px}
+
+/* ---- escala tipográfica ---- */
+.eyebrow{font-size:13px;letter-spacing:2px;font-weight:700;color:var(--muted);
+  margin:0 0 20px;text-transform:uppercase}
+h1,h2{font-family:var(--display);font-size:clamp(34px,4.1vw,65px);letter-spacing:-2.7px;
+  line-height:1.02;margin:0 0 25px;font-weight:750}
+h1 em,h2 em{font-style:normal;color:var(--purple)}
+h3{font-family:var(--display);font-size:23px;letter-spacing:-.6px;line-height:1.13;margin:14px 0 12px}
+p{font-size:18px;line-height:1.5;margin:0 0 16px;color:var(--muted)}
+code,kbd{font-family:var(--mono);font-size:.9em}
+
+/* ---- capa ---- */
+.capa-wrap{container-type:inline-size}
+.capa{background:var(--capa);color:var(--branco);position:relative;
+  display:flex;flex-direction:column;padding:5.2cqw 5.6cqw;min-height:56cqw}
+.capa::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(60cqw 60cqw at 82% 12%,rgba(255,255,255,.10),transparent 62%)}
+.capa>*{position:relative;z-index:1}
+.chead{display:flex;align-items:center;gap:2.5cqw}
+.chead svg{width:10.4cqw;height:auto;color:var(--branco);display:block}
+.chead span{font-size:1.32cqw;letter-spacing:.14cqw;font-weight:600;
+  padding-left:2.5cqw;border-left:1px solid rgba(255,255,255,.34);color:rgba(255,255,255,.82)}
+.ceyebrow{margin-top:auto;font-size:1.28cqw;letter-spacing:.2cqw;font-weight:700;
+  text-transform:uppercase;color:var(--capa-eyebrow)}
+.ctitle{font-family:var(--display);font-size:7.1cqw;line-height:.97;letter-spacing:-.42cqw;
+  font-weight:800;margin:1.5cqw 0 0;max-width:15em}
+.ctitle em{font-style:normal;color:var(--capa-realce)}
+.cbottom{display:flex;justify-content:space-between;align-items:flex-end;gap:4cqw;margin-top:4.4cqw}
+.cbottom p{font-size:1.72cqw;line-height:1.42;color:var(--capa-corpo);margin:0;max-width:34em}
+.launch{border-left:1px solid rgba(255,255,255,.4);padding-left:2.2cqw;
+  display:flex;flex-direction:column;gap:.75cqw;flex:none}
+.launch span{font-size:1.02cqw;letter-spacing:.14cqw;font-weight:700;
+  color:rgba(255,255,255,.66);text-transform:uppercase}
+.launch strong{font-family:var(--display);font-size:4.1cqw;letter-spacing:-.2cqw;
+  line-height:1;font-weight:700}
+/* fim da capa */
+
+/* ---- componentes do catálogo ---- */
+.topbar{height:82px;padding:0 4.5vw;display:flex;align-items:center;justify-content:space-between;
+  border-bottom:1px solid var(--line);background:var(--paper)}
+.topbar svg{width:96px;height:45px;color:var(--ink);object-fit:contain}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--raio);
+  padding:25px;position:relative}
+.card p:last-child{margin-bottom:0}
+.num{font-size:12px;letter-spacing:1.4px;color:var(--purple);font-weight:700}
+.note{margin-top:23px;padding:20px 24px;border-left:4px solid var(--purple);
+  background:var(--note-fundo);font-size:17px;line-height:1.55;color:var(--ink)}
+.note p{font-size:16px;margin:10px 0 0}
+.takeaway{font-size:24px;line-height:1.35;margin-top:25px;max-width:1060px;
+  border-left:4px solid var(--purple);padding-left:23px;font-weight:600;color:var(--ink)}
+.ribbon{margin-top:22px;border-top:1px solid var(--line);padding-top:20px;
+  display:flex;gap:30px;align-items:center;font-size:17px}
+.ribbon b{font-size:20px}
+.footnote{font-size:13px;line-height:1.45;margin:19px 0 0;max-width:1080px;color:var(--muted)}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--on-accent);
+  font-size:12px;font-weight:700;letter-spacing:1.2px;padding:6px 13px;border-radius:40px;
+  text-transform:uppercase}
+
+/* ---- grades ---- */
+.grid{display:grid;gap:18px}
+.two{grid-template-columns:1fr 1fr}
+.three{grid-template-columns:repeat(3,1fr)}
+
+/* ---- mobile ---- */
+@media(max-width:760px){
+  .topbar{height:68px;padding:0 20px}
+  .topbar svg{width:75px}
+  h1,h2{font-size:39px;letter-spacing:-1.8px}
+  p{font-size:17px}
+  .card{padding:21px}
+  .two,.three{grid-template-columns:1fr}
+  .ribbon{flex-direction:column;align-items:start;gap:12px}
+  .takeaway{font-size:22px}
+  .footnote{font-size:12px}
+}
+
+/* ---- movimento ---- */
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+
+/* ---- impressão ---- */
+@media print{
+  html,body{height:auto;background:var(--branco)}
+  .topbar{display:none!important}
+  .card,.note,.takeaway,.capa{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  h1,h2{font-size:42px}
+  .three{grid-template-columns:repeat(3,1fr)}
+  .footnote{font-size:11px}
+}
