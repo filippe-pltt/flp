@@ -1,0 +1,377 @@
+<title>Audit Márcia Cosméticos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: relatório de consultoria em coluna única de leitura (~72ch), com painéis de evidência e tabelas que respiram para a largura total. */
+:root{
+  --bg:#f6f7f9; --paper:#ffffff; --ink:#15192b; --muted:#5a6078; --line:#dfe2ea;
+  --accent:#e8650a; --accent-soft:#fff0e4;
+  --crit:#c42b3a; --crit-soft:#fdecee; --warn:#b77400; --warn-soft:#fff5dc; --ok:#1f7a4d; --ok-soft:#e5f5ec;
+  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --shadow:0 1px 2px rgba(21,25,43,.06);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#10131d; --paper:#171b28; --ink:#e9ebf2; --muted:#9aa0b7; --line:#2a3043;
+  --accent:#ff8a3d; --accent-soft:#2c1d12;
+  --crit:#ff6b78; --crit-soft:#35171c; --warn:#f0b43c; --warn-soft:#30260f; --ok:#4cc98a; --ok-soft:#12291e;
+  --shadow:none; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#10131d; --paper:#171b28; --ink:#e9ebf2; --muted:#9aa0b7; --line:#2a3043;
+  --accent:#ff8a3d; --accent-soft:#2c1d12;
+  --crit:#ff6b78; --crit-soft:#35171c; --warn:#f0b43c; --warn-soft:#30260f; --ok:#4cc98a; --ok-soft:#12291e;
+  --shadow:none; color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;padding-inline:16px;padding-block:0 64px}
+.wrap{max-width:980px;margin:0 auto}
+.read{max-width:72ch}
+h1,h2,h3{font-family:var(--f-display);line-height:1.12;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.1rem,5.2vw,3.4rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.5rem,3.2vw,2rem);font-weight:700;letter-spacing:-.01em}
+h3{font-size:1.18rem;font-weight:700}
+p{margin:0}
+a{color:var(--accent);text-underline-offset:2px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+code,.mono{font-family:var(--f-mono);font-size:.86em}
+.eyebrow{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.muted{color:var(--muted)}
+.stack{display:flex;flex-direction:column;gap:14px}
+section{padding-block:56px 8px;border-top:1px solid var(--line);margin-top:48px}
+section > .stack{gap:18px}
+
+/* cabeçalho */
+header.top{padding-block:40px 8px}
+.brandline{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;justify-content:space-between;padding-bottom:28px;border-bottom:3px solid var(--ink)}
+.brandline .mono{font-size:.8rem}
+.hero{display:grid;gap:22px;padding-block:32px 0}
+.thesis{font-size:clamp(1.15rem,2.3vw,1.38rem);line-height:1.5;max-width:60ch}
+.thesis strong{background:linear-gradient(transparent 62%,var(--accent-soft) 62%)}
+
+/* números */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:30px}
+.kpi{background:var(--paper);padding:18px 18px 16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.kpi b{font-family:var(--f-display);font-size:2.15rem;font-weight:800;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.kpi b.crit{color:var(--crit)}
+.kpi span{font-size:.88rem;color:var(--muted);line-height:1.4}
+
+/* scorecard */
+.score{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}
+.sc{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:start;box-shadow:var(--shadow)}
+.sc h3{font-size:1rem}
+.sc .n{font-family:var(--f-display);font-weight:800;font-size:1.6rem;line-height:1;font-variant-numeric:tabular-nums}
+.sc .n small{font-size:.8rem;color:var(--muted);font-weight:500}
+.sc p{grid-column:1/-1;font-size:.88rem;color:var(--muted);line-height:1.45}
+.meter{grid-column:1/-1;height:6px;border-radius:3px;background:var(--line);overflow:hidden;margin-top:4px}
+.meter i{display:block;height:100%}
+.lv-crit .n,.lv-crit .tag{color:var(--crit)} .lv-crit .meter i{background:var(--crit)}
+.lv-warn .n,.lv-warn .tag{color:var(--warn)} .lv-warn .meter i{background:var(--warn)}
+.lv-ok .n{color:var(--ok)} .lv-ok .meter i{background:var(--ok)}
+
+/* tabelas */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;font-size:.92rem;font-variant-numeric:tabular-nums}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;background:var(--bg)}
+td.num,th.num{text-align:right}
+tr:last-child td{border-bottom:0}
+tr.us td{background:var(--accent-soft);font-weight:600}
+td.zero{color:var(--crit);font-weight:700}
+.bar{display:inline-block;height:8px;border-radius:2px;background:var(--accent);vertical-align:middle;margin-left:8px;opacity:.85}
+caption{caption-side:bottom;text-align:left;padding:10px 14px;font-size:.8rem;color:var(--muted);white-space:normal}
+
+/* achados */
+.finding{display:grid;gap:14px;padding:22px 0 26px;border-bottom:1px dashed var(--line)}
+.finding:last-child{border-bottom:0}
+.fhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 12px}
+.tag{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:4px;font-weight:500;white-space:nowrap}
+.tag.crit{background:var(--crit-soft);color:var(--crit)}
+.tag.warn{background:var(--warn-soft);color:var(--warn)}
+.tag.new{background:var(--accent-soft);color:var(--accent)}
+.finding ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px}
+.finding li{max-width:70ch}
+.fix{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--ok);border-radius:6px;padding:12px 16px;font-size:.94rem;max-width:72ch}
+.fix b{color:var(--ok)}
+figure{margin:0;display:flex;flex-direction:column;gap:8px;max-width:100%}
+figure img{border:1px solid var(--line);border-radius:8px;display:block;max-width:100%;height:auto;background:var(--paper)}
+figcaption{font-size:.82rem;color:var(--muted);line-height:1.4}
+.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;align-items:start}
+.ids{display:flex;flex-wrap:wrap;gap:6px}
+.ids code{background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:2px 6px}
+
+/* correções */
+.corr{display:grid;gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper)}
+.corr > div{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.corr > div > p{padding:12px 16px;border-bottom:1px solid var(--line);font-size:.92rem;min-width:0}
+.corr > div > p:first-child{border-right:1px solid var(--line);color:var(--muted)}
+.corr > div:last-child > p{border-bottom:0}
+.corr .h p{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;background:var(--bg);color:var(--muted)}
+@media (max-width:620px){ .corr > div{grid-template-columns:1fr} .corr > div > p:first-child{border-right:0;border-bottom:0;padding-bottom:0} .corr .h{display:none} }
+
+/* plano */
+.plan{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.phase{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.phase .when{font-family:var(--f-display);font-weight:800;font-size:1.5rem;color:var(--accent)}
+.phase ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:8px;font-size:.93rem}
+
+footer{margin-top:56px;padding-top:20px;border-top:3px solid var(--ink);font-size:.86rem;color:var(--muted);display:grid;gap:10px}
+footer ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px}
+@media (prefers-reduced-motion:no-preference){ .meter i{transition:width .6s ease} }
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div class="brandline">
+    <span class="eyebrow">Made Brasil · Auditoria de marketing digital externa</span>
+    <span class="mono muted">28/09/2026 · marciacosmeticos.com.br · v2</span>
+  </div>
+  <div class="hero">
+    <h1>Márcia Cosméticos</h1>
+    <p class="thesis">A Márcia tem a instalação de uma marca que anuncia: pixels de Meta, Google Ads e TikTok, <strong>cada um em dobro</strong>. Mas hoje não há nenhum anúncio da marca no ar. E o site que receberia essa mídia <strong>cobra de frete até 2,5 vezes o preço do produto</strong> fora do Rio.</p>
+    <p class="read muted">Levantamento feito só com dados públicos, em 28/09/2026: navegação real no site (desktop e celular), leitura do container público do Google Tag Manager, teste de frete para cinco capitais, Lighthouse, bibliotecas de anúncios da Meta e do Google, perfis sociais, Reclame Aqui e marketplaces. Ele amplia o documento de 24/09 e corrige seis pontos dele.</p>
+  </div>
+  <div class="kpis" role="list">
+    <div class="kpi" role="listitem"><b class="crit">0</b><span>anúncios ativos na Meta e no Google para a marca. A Salon Line tem cerca de 1.600 na Meta.</span></div>
+    <div class="kpi" role="listitem"><b>6</b><span>pixels de mídia instalados para 3 plataformas (2 Meta, 2 Google Ads, 2 TikTok)</span></div>
+    <div class="kpi" role="listitem"><b class="crit">245%</b><span>peso do frete PAC sobre o preço do shampoo Aney (R$ 11,94) em Manaus. Em São Paulo, 163%.</span></div>
+    <div class="kpi" role="listitem"><b>13<small style="font-size:1rem;font-weight:500">/100</small></b><span>nota de performance no celular (Lighthouse). A home pesa 6,3 MB em 183 requisições.</span></div>
+    <div class="kpi" role="listitem"><b>24,4 mil</b><span>seguidores no Instagram, contra 145 mil no Facebook. No TikTok são 79.</span></div>
+  </div>
+</header>
+
+<section id="notas">
+  <div class="stack">
+    <span class="eyebrow">Placar por frente</span>
+    <h2>Oito frentes, só uma acima da média</h2>
+    <p class="read muted">Nota de 0 a 10 dada pela Made a partir dos achados deste documento. Serve para ordenar prioridades, não é métrica de plataforma.</p>
+    <div class="score">
+      <div class="sc lv-crit"><h3>Mídia paga</h3><span class="n">1<small>/10</small></span><div class="meter"><i style="width:10%"></i></div><p>Contas duplicadas e nenhuma campanha visível no ar.</p></div>
+      <div class="sc lv-crit"><h3>Frete e oferta</h3><span class="n">2<small>/10</small></span><div class="meter"><i style="width:20%"></i></div><p>Frete de 1,6x a 2,5x o ticket fora do RJ, sem régua nacional clara.</p></div>
+      <div class="sc lv-crit"><h3>Mensuração</h3><span class="n">3<small>/10</small></span><div class="meter"><i style="width:30%"></i></div><p>Conversão do Google Ads com gatilho amplo e eventos enviados a contas em dobro.</p></div>
+      <div class="sc lv-crit"><h3>Redes sociais</h3><span class="n">3<small>/10</small></span><div class="meter"><i style="width:30%"></i></div><p>Base no Facebook, Instagram pequeno, TikTok e YouTube praticamente vazios.</p></div>
+      <div class="sc lv-crit"><h3>SEO e domínios</h3><span class="n">3<small>/10</small></span><div class="meter"><i style="width:30%"></i></div><p>Nome errado no Google, URLs "None" e domínio antigo caindo em página bloqueada.</p></div>
+      <div class="sc lv-crit"><h3>PDV × digital</h3><span class="n">3<small>/10</small></span><div class="meter"><i style="width:30%"></i></div><p>Página "Onde encontrar" dispensa quem mora onde não há loja.</p></div>
+      <div class="sc lv-warn"><h3>Site e velocidade</h3><span class="n">4<small>/10</small></span><div class="meter"><i style="width:40%"></i></div><p>Visual limpo e produto bem descrito, mas pesado e sem dados estruturados.</p></div>
+      <div class="sc lv-ok"><h3>Reputação</h3><span class="n">7<small>/10</small></span><div class="meter"><i style="width:70%"></i></div><p>Nota 8,5 no Reclame Aqui, com reclamações concentradas em química capilar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="benchmark">
+  <div class="stack">
+    <span class="eyebrow">Benchmark · 28/09/2026</span>
+    <h2>A marca tem público, mas ele ficou no Facebook</h2>
+    <p class="read">Com 145 mil seguidores no Facebook, a Márcia tem uma base comparável à de marcas médias. No Instagram e no TikTok, onde o cabelo cacheado e a coloração em casa são vendidos hoje, ela praticamente não existe. Os concorrentes anunciam sem parar, e a Márcia não anuncia.</p>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Marca</th><th class="num">Facebook</th><th class="num">Instagram</th><th class="num">TikTok</th><th class="num">Anúncios ativos na Meta</th></tr></thead>
+        <tbody>
+          <tr class="us"><td>Márcia Cosméticos</td><td class="num">145 mil</td><td class="num">24,4 mil</td><td class="num">79</td><td class="num zero">0</td></tr>
+          <tr><td>Salon Line</td><td class="num">2,8 mi</td><td class="num">4,6 mi</td><td class="num">4,9 mi</td><td class="num">~1.600</td></tr>
+          <tr><td>Skala</td><td class="num">537 mil</td><td class="num">2,1 mi</td><td class="num">1,5 mi</td><td class="num">38</td></tr>
+          <tr><td>Bio Extratus</td><td class="num">1,5 mi</td><td class="num">1,8 mi</td><td class="num">578,8 mil</td><td class="num">~56</td></tr>
+          <tr><td>Lola Cosmetics</td><td class="num">922 mil</td><td class="num">1,3 mi</td><td class="num">1,1 mi</td><td class="num">~35</td></tr>
+          <tr><td>Embelleze</td><td class="num">3,9 mi</td><td class="num">1,4 mi</td><td class="num">n/d</td><td class="num">~23</td></tr>
+          <tr><td>Novex (Meus Cachos)</td><td class="num">1,1 mi</td><td class="num">271,9 mil</td><td class="num">n/d</td><td class="num">~5</td></tr>
+          <tr><td>Beautycolor</td><td class="num">1,2 mi</td><td class="num">223,9 mil</td><td class="num">n/d</td><td class="num">0</td></tr>
+          <tr><td>Skafe</td><td class="num">n/d</td><td class="num">177,5 mil</td><td class="num">n/d</td><td class="num">13</td></tr>
+        </tbody>
+        <caption>Seguidores de Facebook e Instagram conforme exibidos na Biblioteca de Anúncios da Meta. TikTok pelo perfil público. Anúncios ativos no Brasil em 28/09/2026. "n/d" indica que não foi possível identificar o perfil oficial com segurança.</caption>
+      </table>
+    </div>
+    <p class="read">No frete, a referência é a Salon Line, que anuncia no topo do site <strong>"frete grátis acima de R$ 99"</strong>. É uma regra nacional, simples e visível antes do carrinho.</p>
+  </div>
+</section>
+
+<section id="achados">
+  <div class="stack">
+    <span class="eyebrow">Achados</span>
+    <h2>O que encontramos, por frente</h2>
+  </div>
+
+  <article class="finding">
+    <div class="fhead"><span class="tag crit">Crítico</span><span class="tag new">Novo</span><h3>1. Seis pixels instalados e nenhuma campanha no ar</h3></div>
+    <p class="read">O site carrega, em toda página, dois pixels da Meta, duas contas de Google Ads e dois pixels do TikTok. Cada visita à home gera eventos <code>PageView</code> e <code>ViewHome</code> nas duas contas da Meta e <code>view_home</code> nas duas do Google Ads. Mesmo assim, a Biblioteca de Anúncios da Meta não mostra nenhum anúncio ativo da página oficial, e o Google Ads Transparency Center não mostra nenhum anúncio apontando para <code>marciacosmeticos.com.br</code> ou <code>marciaonline.com.br</code>.</p>
+    <div class="ids">
+      <code>Meta 1036792118901758</code><code>Meta 847340554691511</code><code>AW-16482982365</code><code>AW-18326144078</code><code>TikTok D9HSJPBC77UD7F80B2C0</code><code>TikTok DABJ23BC77UF8GCEDQ50</code><code>GA4 G-N9DMG905M5</code><code>GTM-MKK6HLCD</code>
+    </div>
+    <ul>
+      <li>Contas em dobro costumam ser sinal de agências anteriores que saíram sem entregar os acessos. O histórico de público e de conversões fica dividido e, às vezes, sem dono.</li>
+      <li>O TikTok tem dois pixels para um perfil com 79 seguidores e nenhum anúncio.</li>
+      <li>A premissa do documento anterior ("a Márcia paga mídia") não se confirma hoje. O que se confirma é que ela já pagou e parou, ou paga por outra página que não a oficial.</li>
+    </ul>
+    <figure><img src="img/meta.jpg" alt="Biblioteca de Anúncios da Meta mostrando a página Márcia Cosméticos sem nenhum anúncio ativo" loading="lazy" width="1100" height="724"><figcaption>Biblioteca de Anúncios da Meta, página oficial (ID 175086359210667), filtro de anúncios ativos no Brasil, 28/09/2026.</figcaption></figure>
+    <p class="fix"><b>O que fazer:</b> levantar na reunião quem é dono de cada conta e Business Manager. Consolidar em uma conta por plataforma, em nome da Márcia, e remover os pixels órfãos antes de retomar qualquer verba.</p>
+  </article>
+
+  <article class="finding">
+    <div class="fhead"><span class="tag crit">Crítico</span><span class="tag new">Novo</span><h3>2. A conversão do Google Ads pode contar compras que não aconteceram</h3></div>
+    <p class="read">O container público do GTM (versão 8) tem só cinco tags. A de conversão do Google Ads (<code>AW-18326144078</code>) dispara em <strong>qualquer URL que contenha "checkout"</strong>, inclusive em mudanças de tela sem recarregar a página. Na Loja Integrada, "checkout" aparece em todas as etapas, do carrinho à confirmação. O valor e o número do pedido são lidos de elementos que só existem na tela de pedido concluído.</p>
+    <ul>
+      <li>Resultado provável: início de checkout registrado como compra, com valor vazio ou zero. Isso distorce o custo por venda e o aprendizado dos lances automáticos.</li>
+      <li>Conversões otimizadas e relatório de produtos estão desligados na tag.</li>
+      <li>O vínculo entre os domínios <code>marciacosmeticos.com.br</code> e <code>marciaonline.com.br</code> está configurado. Isso responde à dúvida levantada no documento anterior.</li>
+      <li>O GA4 dispara um único <code>page_view</code> por página, então não há contagem dupla ali.</li>
+    </ul>
+    <p class="fix"><b>O que fazer:</b> restringir o gatilho à página de pedido concluído, usar o evento de compra nativo da plataforma com valor e ID do pedido, e ligar as conversões otimizadas.</p>
+  </article>
+
+  <article class="finding">
+    <div class="fhead"><span class="tag crit">Crítico</span><h3>3. O frete custa mais que o produto fora do Rio</h3></div>
+    <p class="read">Cotamos o Shampoo Aney Brilho Molhado 300 ml (R$ 11,94) na calculadora da página de produto. O site só oferece Correios.</p>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Destino (CEP central)</th><th class="num">PAC</th><th class="num">Prazo</th><th class="num">SEDEX</th><th class="num">PAC ÷ produto</th></tr></thead>
+        <tbody>
+          <tr><td>Rio de Janeiro</td><td class="num">n/d</td><td class="num">3 dias</td><td class="num">R$ 10,36</td><td class="num">87% (SEDEX)</td></tr>
+          <tr><td>São Paulo</td><td class="num">R$ 19,47</td><td class="num">7 dias</td><td class="num">R$ 29,44</td><td class="num">163%<span class="bar" style="width:33px"></span></td></tr>
+          <tr><td>Porto Alegre</td><td class="num">R$ 21,82</td><td class="num">9 dias</td><td class="num">R$ 41,22</td><td class="num">183%<span class="bar" style="width:37px"></span></td></tr>
+          <tr><td>Salvador</td><td class="num">R$ 24,34</td><td class="num">8 dias</td><td class="num">R$ 52,99</td><td class="num">204%<span class="bar" style="width:41px"></span></td></tr>
+          <tr><td>Manaus</td><td class="num">R$ 29,20</td><td class="num">20 dias</td><td class="num">R$ 61,84</td><td class="num">245%<span class="bar" style="width:49px"></span></td></tr>
+        </tbody>
+        <caption>Cotação feita em 28/09/2026 com 1 unidade. Prazos em dias úteis, como informados pelo site.</caption>
+      </table>
+    </div>
+    <div class="pair">
+      <figure><img src="img/home.jpg" alt="Home do site com o selo Frete grátis para RJ" loading="lazy" width="1100" height="724"><figcaption>A home promete "Frete grátis para RJ" sem dizer a partir de qual valor.</figcaption></figure>
+      <figure><img src="img/frete-rj.jpg" alt="Calculadora de frete na página do shampoo mostrando R$ 10,36 para CEP do centro do Rio" loading="lazy" width="566" height="630"><figcaption>No mesmo site, 1 shampoo para o Centro do Rio (20040-002) sai por R$ 10,36.</figcaption></figure>
+    </div>
+    <ul>
+      <li>Existem uma régua de frete grátis (pop-up "Quer FRETE GRÁTIS? Digite o seu CEP e saiba quanto falta!"), um combo com 10% de desconto na página do produto e o Kit Cachos Perfeitos. As alavancas estão lá, mas escondidas: nenhuma mostra um valor mínimo antes do carrinho.</li>
+      <li>Na listagem do Mercado Livre, produtos Márcia aparecem com frete grátis para o comprador. A consumidora tem um bom motivo para não comprar no site.</li>
+    </ul>
+    <p class="fix"><b>O que fazer:</b> definir uma régua nacional única (a Salon Line usa R$ 99) e mostrá-la no topo de todas as páginas. Montar kits por rotina ("cachos completo", "coloração em casa") entre R$ 60 e R$ 110, e só voltar a anunciar produto avulso para quem já está no RJ.</p>
+  </article>
+
+  <article class="finding">
+    <div class="fhead"><span class="tag crit">Crítico</span><h3>4. Nome errado no Google, menu quebrado e domínio antigo bloqueado</h3></div>
+    <ul>
+      <li>O título de todas as páginas termina em "Marcia Online", e o da home é só isso. A home não tem meta description e tem o H1 vazio.</li>
+      <li>19 links do menu apontam para URLs geradas como <code>/categoria/None-2023-06-09-11-53-04.html</code>, <code>/None</code> e <code>/None---</code>. A categoria HIDRASHOCK abre vazia e está liberada para indexação.</li>
+      <li>A home e a página de produto não têm dados estruturados (<code>schema.org/Product</code>). Sem eles, o Google não mostra preço, estoque nem nota nos resultados. Salon Line, Bio Extratus e Skafe já publicam dados estruturados em seus sites.</li>
+      <li>URLs antigas do <code>marciaonline.com.br</code> (da loja anterior, no formato <code>/index.php/finalizadores/…</code>) ainda aparecem no Google. O redirecionamento mantém o caminho antigo, e o firewall da Loja Integrada responde com "Seu request foi bloqueado por segurança".</li>
+      <li>Sete banners da home e a bio do TikTok ainda apontam para o domínio antigo.</li>
+      <li>Dois produtos têm o mesmo nome, "Creme de Finalização Aney Óleo de Coco", um a R$ 13,94 e outro a R$ 30,74. A diferença (300 ml ou 1 L) não aparece no nome.</li>
+    </ul>
+    <div class="pair">
+      <figure><img src="img/hidrashock.jpg" alt="Categoria HIDRASHOCK exibindo a mensagem Não existem produtos nessa categoria" loading="lazy" width="1100" height="450"><figcaption>Categoria do menu principal, aberta pela URL "None-2023-06-09".</figcaption></figure>
+      <figure><img src="img/bloqueado.jpg" alt="Página de erro Ops, seu request foi bloqueado por segurança" loading="lazy" width="1100" height="402"><figcaption>Destino de uma URL antiga do marciaonline.com.br que ainda aparece na busca do Google.</figcaption></figure>
+    </div>
+    <p class="fix"><b>O que fazer:</b> trocar "Marcia Online" por "Márcia Cosméticos" no template, refazer o menu com categorias reais, aplicar <code>noindex</code> ou remover as categorias vazias, mapear as URLs antigas do marciaonline para os produtos novos (redirecionamento 301 um a um) e ativar o schema de produto.</p>
+  </article>
+
+  <article class="finding">
+    <div class="fhead"><span class="tag warn">Importante</span><span class="tag new">Novo</span><h3>5. Site pesado demais para o celular</h3></div>
+    <p class="read">O Lighthouse em modo celular deu 13/100 de performance, 66 de acessibilidade, 75 de boas práticas e 77 de SEO. A nota exata varia com a rede do teste, mas a causa é estrutural:</p>
+    <ul>
+      <li>A home tem 6,3 MB e 183 requisições. Os banners são PNG de 1920 px enviados também para o celular, com economia estimada de 2,7 MB.</li>
+      <li>Um vídeo do YouTube embutido na home carrega cerca de 1 MB antes de qualquer clique.</li>
+      <li>Os ícones de categoria vêm do servidor de um fornecedor (<code>cacalutia.com.br/clientes/marcia/…</code>). Se esse contrato acabar, a home fica sem ícones.</li>
+      <li>Há 28 imagens sem texto alternativo, e banners com alt "BANNER 6", "BANNER 8" e "BANNER 10".</li>
+    </ul>
+    <p class="fix"><b>O que fazer:</b> converter os banners para WebP em versões para celular, trocar o vídeo embutido por uma imagem com link, hospedar os ícones na própria loja e retirar os pixels duplicados. Hoje os scripts de Meta, Google e TikTok somam cerca de 1 MB na home.</p>
+  </article>
+
+  <article class="finding">
+    <div class="fhead"><span class="tag warn">Importante</span><span class="tag new">Novo</span><h3>6. Redes sociais: público herdado, canal novo abandonado</h3></div>
+    <ul>
+      <li>Facebook com 145 mil seguidores e Instagram com 24,4 mil. A base é de outra época e não migrou.</li>
+      <li>TikTok com 79 seguidores e 500 curtidas. O canal do YouTube tem 8 inscritos.</li>
+      <li>A melhor frase da marca, "+ de 90 anos cuidando da sua beleza", só aparece na bio do TikTok. A página "Quem somos" fala de missão, valores e de um parque fabril de 20.000 m², mas não conta a história.</li>
+    </ul>
+    <figure><img src="img/tiktok.jpg" alt="Perfil da Márcia Cosméticos no TikTok com 79 seguidores e link para marciaonline.com.br" loading="lazy" width="900" height="230"><figcaption>Perfil oficial no TikTok: 79 seguidores, bio com "90 anos" e link para o domínio antigo.</figcaption></figure>
+    <p class="fix"><b>O que fazer:</b> tratar a tradição como o ativo central da marca (90 anos, fábrica própria, preço justo) e o Instagram e o TikTok como canais de tutorial: teste de mecha, descoloração segura, finalização de cachos.</p>
+  </article>
+
+  <article class="finding">
+    <div class="fhead"><span class="tag warn">Importante</span><span class="tag new">Novo</span><h3>7. Reputação boa, com um risco na química</h3></div>
+    <ul>
+      <li>No Reclame Aqui, nos 12 meses até 31/08/2026: nota 8,5, 25 reclamações, 96% respondidas, 80% resolvidas, resposta média em 1 dia e 9 horas. A empresa não é verificada.</li>
+      <li>As reclamações se concentram em descolorante e tintura: irritação na pele e nos olhos, cor diferente da prometida, "corpo estranho" no frasco.</li>
+      <li>Uma reclamação diz que o WhatsApp de atendimento não funciona. O link de WhatsApp do site usa o número <code>5502199118301</code>, com um zero antes do DDD e só oito dígitos, formato que o WhatsApp não reconhece.</li>
+    </ul>
+    <p class="fix"><b>O que fazer:</b> corrigir o número do WhatsApp, verificar a empresa no Reclame Aqui e publicar conteúdo de uso seguro (teste de mecha e de alergia) nas páginas de coloração e descoloração. Isso reduz a reclamação e melhora a conversão da categoria.</p>
+  </article>
+
+  <article class="finding">
+    <div class="fhead"><span class="tag warn">Importante</span><span class="tag new">Novo</span><h3>8. Marketplaces sem dono</h3></div>
+    <ul>
+      <li>Produtos Márcia são vendidos na Amazon e no Mercado Livre por terceiros, com frete grátis em vários anúncios. Não identificamos loja oficial da marca em nenhum dos dois.</li>
+      <li>A loja "marcia_cosmeticos" na Shopee aparece como "não está mais ativa".</li>
+      <li>Aqui a verificação foi parcial: o Mercado Livre e a Magalu bloquearam a navegação automatizada e exigem checagem manual.</li>
+    </ul>
+    <p class="fix"><b>O que fazer:</b> decidir com a Navarro se o marketplace é canal oficial ou só de revenda. Nos dois casos, alinhar preço mínimo e conteúdo das fichas para não competir com o próprio site.</p>
+  </article>
+
+  <article class="finding">
+    <div class="fhead"><span class="tag warn">Importante</span><h3>9. PDV e digital se ignoram (mantido do documento de 24/09)</h3></div>
+    <ul>
+      <li>Onze estados aparecem com "Nenhum ponto de venda cadastrado", e a página pede contato em vez de oferecer a loja online.</li>
+      <li>A lista é em texto corrido, sem busca por CEP. Há erros de cadastro, como um DDD 95 listado no Amazonas e Brasília dentro de Goiás.</li>
+      <li>A página publica e-mails pessoais de lojistas (Gmail e Hotmail). Isso é um risco de LGPD, não só de UX.</li>
+    </ul>
+    <p class="fix"><b>O que fazer:</b> nos estados sem PDV, trocar a mensagem por "Compre online com frete para o seu CEP" e um link para o kit mais vendido. Tirar os e-mails pessoais do ar esta semana.</p>
+  </article>
+</section>
+
+<section id="correcoes">
+  <div class="stack">
+    <span class="eyebrow">Revisão do documento de 24/09</span>
+    <h2>Seis pontos que mudam com dados públicos</h2>
+    <div class="corr">
+      <div class="h"><p>O documento dizia</p><p>O que os dados mostram</p></div>
+      <div><p>"A Márcia já paga, ou pagou, mídia de performance."</p><p>Há contas instaladas, mas nenhum anúncio ativo na Meta nem no Google em 28/09.</p></div>
+      <div><p>Pixel da Meta "depende de acesso".</p><p>É visível sem acesso: dois pixels ativos, além de duas contas de Google Ads e dois pixels de TikTok.</p></div>
+      <div><p>Configuração entre domínios não confirmada.</p><p>O GTM tem o vínculo configurado para marciacosmeticos.com.br e marciaonline.com.br.</p></div>
+      <div><p>Frete não é comunicado em home e produto.</p><p>A home diz "Frete grátis para RJ" e o produto tem calculadora. O problema é o valor e a falta de régua clara.</p></div>
+      <div><p>"Há apenas um kit à venda."</p><p>Há também um combo de 4 itens com 10% na página de cada produto Aney. Falta dar visibilidade a ele.</p></div>
+      <div><p>"Não há WhatsApp de atendimento."</p><p>Há um link, mas com número em formato inválido. Uma reclamação no Reclame Aqui confirma a falha.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="plano">
+  <div class="stack">
+    <span class="eyebrow">Plano</span>
+    <h2>Arrumar a casa antes de voltar a anunciar</h2>
+    <div class="plan">
+      <div class="phase"><span class="when">30 dias</span><ol>
+        <li>Mapear donos de contas e consolidar um pixel e uma conta por plataforma.</li>
+        <li>Corrigir o gatilho de conversão do Google Ads e ligar as conversões otimizadas.</li>
+        <li>Corrigir título, menu "None", categorias vazias e número do WhatsApp.</li>
+        <li>Publicar a régua de frete grátis nacional no topo do site.</li>
+        <li>Tirar do ar os e-mails pessoais da página "Onde encontrar".</li>
+      </ol></div>
+      <div class="phase"><span class="when">60 dias</span><ol>
+        <li>Redirecionar uma a uma as URLs antigas do marciaonline.</li>
+        <li>Ativar schema de produto e avaliações na página de produto.</li>
+        <li>Lançar kits por rotina com preço acima da régua de frete.</li>
+        <li>Otimizar imagens e retirar o vídeo embutido da home.</li>
+        <li>Publicar conteúdo de uso seguro nas categorias de química.</li>
+      </ol></div>
+      <div class="phase"><span class="when">90 dias</span><ol>
+        <li>Retomar mídia com funil medido: remarketing no RJ, kits no Brasil.</li>
+        <li>Instagram e TikTok com série de tutoriais e UGC de cachos.</li>
+        <li>Página "Onde encontrar" com busca por CEP e saída para a loja online.</li>
+        <li>Definir política de marketplace (loja oficial ou preço mínimo).</li>
+      </ol></div>
+    </div>
+    <p class="read muted">Com acesso concedido, o próximo passo é medir o tamanho de cada vazamento: GA4 (funil e abandono por etapa), histórico das contas de Google Ads e Meta, Search Console (consultas e páginas antigas indexadas) e o painel da Loja Integrada (ticket médio e frete por região).</p>
+  </div>
+</section>
+
+<footer>
+  <strong style="color:var(--ink)">Método e limites</strong>
+  <ul>
+    <li>Todo o levantamento foi feito em 28/09/2026, sem acesso a dados internos. Navegamos com o Chromium em perfil de desktop e de celular, como um visitante comum.</li>
+    <li>Tags: leitura do container público <code>gtm.js?id=GTM-MKK6HLCD</code> e contagem das chamadas de rede de cada pixel na home.</li>
+    <li>Performance: Lighthouse 12 em perfil de celular. A nota depende da rede do teste. Peso da página e número de requisições são medidas diretas.</li>
+    <li>Mídia: Biblioteca de Anúncios da Meta (Brasil, anúncios ativos) e Google Ads Transparency Center (por domínio). O Instagram bloqueia consultas automáticas, então os seguidores vêm da própria Biblioteca da Meta.</li>
+    <li>Mercado Livre e Magalu bloquearam a navegação automatizada. Os achados de marketplace vêm de buscas e precisam de checagem manual.</li>
+    <li>Os itens 9 e parte do 4 (categorias vazias, URLs "None") reaproveitam o documento de 24/09, e os demais foram verificados de novo nesta data.</li>
+  </ul>
+  <span>Made Brasil · Confidencial · Preparado para a reunião com a Márcia Cosméticos / Navarro Distribuidora</span>
+</footer>
+</div>
