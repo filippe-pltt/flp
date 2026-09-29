@@ -1,0 +1,1964 @@
+[
+ {
+  "url": "https://www.similarweb.com/website/marciacosmeticos.com.br",
+  "name": "marciacosmeticos.com.br",
+  "description": "",
+  "icon": "https://site-images.similarcdn.com/image?url=marciacosmeticos.com.br&t=2&s=1&h=f6e261359efb2d1464a7f14bbb2b84e86fa85cfab771895b688b10ed7724b1ca",
+  "previewDesktop": "https://site-images.similarcdn.com/image?url=marciacosmeticos.com.br&t=1&s=1&h=f6e261359efb2d1464a7f14bbb2b84e86fa85cfab771895b688b10ed7724b1ca",
+  "previewMobile": "https://site-images.similarcdn.com/image?url=marciacosmeticos.com.br&t=4&s=1&h=f6e261359efb2d1464a7f14bbb2b84e86fa85cfab771895b688b10ed7724b1ca",
+  "globalRank": 3999098,
+  "countryRank": 282450,
+  "categoryRank": null,
+  "categoryId": "",
+  "companyYearFounded": 1930,
+  "companyName": "Márcia Cosméticos",
+  "companyEmployeesMin": 201,
+  "companyEmployeesMax": 500,
+  "companyAnnualRevenueMin": null,
+  "companyHeadquarterCountryCode": "BR",
+  "companyHeadquarterStateCode": null,
+  "companyHeadquarterCity": "Maringa",
+  "avgVisitDuration": "00:00:32",
+  "pagesPerVisit": "1.76",
+  "bounceRate": 0.8257388299025601,
+  "totalVisits": 4419,
+  "trafficSources": [
+   {
+    "source": "organic",
+    "rank": 1,
+    "percentage": 0.28070497010879364,
+    "isHigher": null
+   },
+   {
+    "source": "direct",
+    "rank": 2,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "ads",
+    "rank": 3,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "paid",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "referrals",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "social_organic",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "social_paid",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "mail",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "affiliate",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "gen_ai",
+    "rank": -1,
+    "percentage": null,
+    "isHigher": null
+   }
+  ],
+  "adsSource": [],
+  "topKeywords": [
+   {
+    "name": "marcia cosmeticos",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": null
+   },
+   {
+    "name": "pó descolorante marcia ametista",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": null
+   },
+   {
+    "name": "cabelo 3c feminino",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": null
+   },
+   {
+    "name": "água oxigenada marcia 40 volumes",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": null
+   },
+   {
+    "name": "marcia tintura 50g 2.0 preto",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": null
+   }
+  ],
+  "organicTraffic": 0.9725361370241077,
+  "paidTraffic": 0.027463862975892317,
+  "topReferrals": [],
+  "socialNetworkDistribution": [],
+  "topCountries": [
+   {
+    "countryAlpha2Code": "BR",
+    "countryAlpha2CodeRaw": "BR",
+    "countryUrlCode": "brazil",
+    "visitsShare": 0.9999999999999997,
+    "visitsShareChange": -0.014492729556646933
+   }
+  ],
+  "topSimilarityCompetitors": [
+   {
+    "domain": "selfcosmeticos.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=selfcosmeticos.com.br&t=2&s=1&h=e145c1621f3da8fa6fee785d1e37c22e79953a17e721c035ed1f5277f0e1337f",
+    "categoryId": "",
+    "categoryRank": null,
+    "affinity": 1,
+    "isDataFromGa": false
+   }
+  ],
+  "countryRankCompetitors": [
+   {
+    "rank": 282448,
+    "domain": "simtax.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=simtax.com.br&t=2&s=1&h=daae88687c081cd31bbbeda1fffe3d7f5acb65794a13b8da9d7b7cb266c72ec7"
+   },
+   {
+    "rank": 282449,
+    "domain": "oticasipanema.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=oticasipanema.com.br&t=2&s=1&h=444ffb53757d41f3ed64363c4db16582557c939b326759be75e27ce2bf979a3e"
+   },
+   {
+    "rank": 282450,
+    "domain": "marciacosmeticos.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=marciacosmeticos.com.br&t=2&s=1&h=f6e261359efb2d1464a7f14bbb2b84e86fa85cfab771895b688b10ed7724b1ca"
+   },
+   {
+    "rank": 282451,
+    "domain": "l1s0d.com",
+    "icon": "https://site-images.similarcdn.com/image?url=l1s0d.com&t=2&s=1&h=14de2107286464b7cdee80352c2bc178a0c2a72c1260e3823b0db5c2d644f36a"
+   },
+   {
+    "rank": 282452,
+    "domain": "novoporn.com",
+    "icon": "https://site-images.similarcdn.com/image?url=novoporn.com&t=2&s=1&h=15e685e3d5b780553c996cb88f5b75be1beab6d70a64cc6150468d9a1b357ed7"
+   }
+  ],
+  "globalRankCompetitors": [
+   {
+    "rank": 3999096,
+    "domain": "ngroup.ca",
+    "icon": "https://site-images.similarcdn.com/image?url=ngroup.ca&t=2&s=1&h=52b23b2232e28fc4b749a05942be7356ec40d3d083cb5ea8c672c3102c421655"
+   },
+   {
+    "rank": 3999097,
+    "domain": "easttexas.com",
+    "icon": "https://site-images.similarcdn.com/image?url=easttexas.com&t=2&s=1&h=714640b004c621992693af4327416c688269abaad2ce44a5d39dcd3d52e76caf"
+   },
+   {
+    "rank": 3999098,
+    "domain": "marciacosmeticos.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=marciacosmeticos.com.br&t=2&s=1&h=f6e261359efb2d1464a7f14bbb2b84e86fa85cfab771895b688b10ed7724b1ca"
+   },
+   {
+    "rank": 3999099,
+    "domain": "tacosandcrustva.com",
+    "icon": "https://site-images.similarcdn.com/image?url=tacosandcrustva.com&t=2&s=1&h=39dc237519426eac92b77dfd88ce54da62d19d1ce7c318abcc9b002f1678351b"
+   },
+   {
+    "rank": 3999100,
+    "domain": "bodet.com",
+    "icon": "https://site-images.similarcdn.com/image?url=bodet.com&t=2&s=1&h=7dc78c8463c2e0a1e5301feae58512c29e630687d0973c48a41189051eebe868"
+   }
+  ],
+  "topInterestedWebsites": [],
+  "topInterestedTopics": [],
+  "topInterestedCategories": [],
+  "technologies": [
+   {
+    "categoryId": "mobile",
+    "topTechName": "Meta Viewport",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=1325",
+    "technologiesTotalCount": 3
+   },
+   {
+    "categoryId": "social",
+    "topTechName": "Instagram",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=2841",
+    "technologiesTotalCount": 3
+   },
+   {
+    "categoryId": "advertising",
+    "topTechName": "DoubleClick",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=239",
+    "technologiesTotalCount": 2
+   },
+   {
+    "categoryId": "multilingual",
+    "topTechName": "Multilingual Support",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=1984",
+    "technologiesTotalCount": 2
+   }
+  ],
+  "ageDistribution": [
+   {
+    "minAge": 18,
+    "maxAge": 24,
+    "value": 0
+   },
+   {
+    "minAge": 25,
+    "maxAge": 34,
+    "value": 0
+   },
+   {
+    "minAge": 35,
+    "maxAge": 44,
+    "value": 0
+   },
+   {
+    "minAge": 45,
+    "maxAge": 54,
+    "value": 0
+   },
+   {
+    "minAge": 55,
+    "maxAge": 64,
+    "value": 0
+   },
+   {
+    "minAge": 65,
+    "maxAge": null,
+    "value": 0
+   }
+  ],
+  "maleDistribution": null,
+  "femaleDistribution": null,
+  "scrapedAt": "2026-09-29T02:37:25.841Z",
+  "snapshotDate": "2026-08-01T00:00:00+00:00"
+ },
+ {
+  "url": "https://www.similarweb.com/website/bioextratus.com.br",
+  "name": "bioextratus.com.br",
+  "description": "A Bio Extratus tem o tratamento ideal para todos os tipos de beleza. Experimente nossos produtos e seja naturalmente bonita! Conheça nossa Loja Online!",
+  "icon": "https://site-images.similarcdn.com/image?url=bioextratus.com.br&t=2&s=1&h=6c69dae00abfd9184c0da11f09e4a2736c419217e93006530f218c913bca147f",
+  "previewDesktop": "https://site-images.similarcdn.com/image?url=bioextratus.com.br&t=1&s=1&h=6c69dae00abfd9184c0da11f09e4a2736c419217e93006530f218c913bca147f",
+  "previewMobile": "https://site-images.similarcdn.com/image?url=bioextratus.com.br&t=4&s=1&h=6c69dae00abfd9184c0da11f09e4a2736c419217e93006530f218c913bca147f",
+  "globalRank": 102751,
+  "countryRank": 9923,
+  "categoryRank": 42,
+  "categoryId": "lifestyle/beauty_and_cosmetics",
+  "companyYearFounded": null,
+  "companyName": "Bio Extratus",
+  "companyEmployeesMin": 501,
+  "companyEmployeesMax": 1000,
+  "companyAnnualRevenueMin": 2000000,
+  "companyHeadquarterCountryCode": "BR",
+  "companyHeadquarterStateCode": null,
+  "companyHeadquarterCity": "Alvinópolis",
+  "avgVisitDuration": "00:01:19",
+  "pagesPerVisit": "2.10",
+  "bounceRate": 0.517730305761024,
+  "totalVisits": 442703,
+  "trafficSources": [
+   {
+    "source": "ads",
+    "rank": 1,
+    "percentage": 0.2617428043598075,
+    "isHigher": null
+   },
+   {
+    "source": "direct",
+    "rank": 2,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "paid",
+    "rank": 3,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "organic",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "mail",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "gen_ai",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "social_organic",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "referrals",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "social_paid",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "affiliate",
+    "rank": -1,
+    "percentage": null,
+    "isHigher": null
+   }
+  ],
+  "adsSource": [
+   {
+    "domain": "",
+    "icon": "",
+    "visitsShare": 0.5766260000000001,
+    "isLocked": true,
+    "isAvailable": true
+   },
+   {
+    "domain": "",
+    "icon": "",
+    "visitsShare": 0.07581800000000001,
+    "isLocked": true,
+    "isAvailable": true
+   },
+   {
+    "domain": "royalroad.com",
+    "icon": "https://site-images.similarcdn.com/image?url=royalroad.com&t=2&s=1&h=8e8379b6c71f31e080e3fc75255020145ee0573a13a31bd61b87d4bdf972b435",
+    "visitsShare": 0.074524,
+    "isLocked": false,
+    "isAvailable": true
+   },
+   {
+    "domain": "pelando.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=pelando.com.br&t=2&s=1&h=14c7442b539b33df2e7da68028c182f01bcef2244df2d8c3035e6414174b74bd",
+    "visitsShare": 0.074511,
+    "isLocked": false,
+    "isAvailable": true
+   },
+   {
+    "domain": "em.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=em.com.br&t=2&s=1&h=c7098b7072ae233cbeda467e0870daa6a965ea99ff88efb21d5a8c23e834f6ef",
+    "visitsShare": 0.07260600000000002,
+    "isLocked": false,
+    "isAvailable": true
+   }
+  ],
+  "topKeywords": [
+   {
+    "name": "bio extratus",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.32
+   },
+   {
+    "name": "bioextratus",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.31
+   },
+   {
+    "name": "reconstrutor bio extratus",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.19
+   },
+   {
+    "name": "creme de pentear bio extratus",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.16
+   },
+   {
+    "name": "bio extratus tutano",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.16
+   }
+  ],
+  "organicTraffic": 0.6082319595118076,
+  "paidTraffic": 0.39176804048819236,
+  "topReferrals": [
+   {
+    "domain": "",
+    "icon": "",
+    "visitsShare": 0.03976375745997308,
+    "isLocked": true,
+    "isAvailable": true
+   }
+  ],
+  "socialNetworkDistribution": [],
+  "topCountries": [
+   {
+    "countryAlpha2Code": "BR",
+    "countryAlpha2CodeRaw": "BR",
+    "countryUrlCode": "brazil",
+    "visitsShare": 0.9516995758883051,
+    "visitsShareChange": -0.27813870932030316
+   },
+   {
+    "countryAlpha2Code": "US",
+    "countryAlpha2CodeRaw": "US",
+    "countryUrlCode": "united-states",
+    "visitsShare": 0.04830042411169486,
+    "visitsShareChange": 0.3322081021853245
+   }
+  ],
+  "topSimilarityCompetitors": [
+   {
+    "domain": "eico.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=eico.com.br&t=2&s=1&h=804976520d0f53579fcffe1274b1b8938692ceab30e541ef053ebf2eeb99b0e2",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 5799,
+    "affinity": 1,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "miocapelli.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=miocapelli.com.br&t=2&s=1&h=1a662ed5866805c9066e5985b969ffd4a8fb2e45ace4b2063386e8f3b958405e",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 2967,
+    "affinity": 0.9239130434782608,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "foreverliss.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=foreverliss.com.br&t=2&s=1&h=7e79c5518628f9ce4bb3ca36f1085861cb26d81c78d258af66fa54ad1ec14a1a",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 865,
+    "affinity": 0.9021739130434782,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "jarejo.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=jarejo.com.br&t=2&s=1&h=d1bd41186a3ab705c85fcc9994d1ea29a5e5ac634b4d668e05c79b9992ad00ad",
+    "categoryId": "",
+    "categoryRank": null,
+    "affinity": 0.8586956521739131,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "poliitens.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=poliitens.com.br&t=2&s=1&h=1b02b33439d2c9c0fd94c95e8d1c11b2f4206ed00ff3bc08b47a024e19a117bc",
+    "categoryId": "",
+    "categoryRank": null,
+    "affinity": 0.8478260869565217,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "haskellcosmeticos.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=haskellcosmeticos.com.br&t=2&s=1&h=2ef028e33edc1a3c93d3fa5a2998d7f77fb54a2e84e1b28227cb6beb9c4bb1b0",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 3942,
+    "affinity": 0.8152173913043478,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "acquafloracosmeticos.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=acquafloracosmeticos.com.br&t=2&s=1&h=d652bc92010ac1f0a4f7d35050c7a89e85682de4e7b77f561456d5bb03734f5a",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 9763,
+    "affinity": 0.8043478260869564,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "lojadobarbeiro.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=lojadobarbeiro.com.br&t=2&s=1&h=230391ed5f3b80c1103a27b89df239cbf04b2eaef00d5aec2114b820fbbdaab7",
+    "categoryId": "",
+    "categoryRank": null,
+    "affinity": 0.7499999999999999,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "shoppingdoscosmeticos.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=shoppingdoscosmeticos.com.br&t=2&s=1&h=c2d1c1f99e3a0bea152fd984dd5736ff52ebdf102daa017f2d4c55f76a07086f",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 11375,
+    "affinity": 0.7282608695652174,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "lojaitallian.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=lojaitallian.com.br&t=2&s=1&h=5a04522a38e6dc4bb1d4ec4e029f900d92a2f52d3b8d58a4d2285bd7b8d3e981",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 19114,
+    "affinity": 0.7065217391304348,
+    "isDataFromGa": false
+   }
+  ],
+  "countryRankCompetitors": [
+   {
+    "rank": 9921,
+    "domain": "dj29fk23.com",
+    "icon": "https://site-images.similarcdn.com/image?url=dj29fk23.com&t=2&s=1&h=bf1c1e3adf619295a879d7e4a444757c78f26aa79035939ab138ce04a9ed91d0"
+   },
+   {
+    "rank": 9922,
+    "domain": "777slot.com",
+    "icon": "https://site-images.similarcdn.com/image?url=777slot.com&t=2&s=1&h=9b1f6763ca10a0f5dba0e9a8ca7a336ee083577ecac7799d655287816a25aa01"
+   },
+   {
+    "rank": 9923,
+    "domain": "bioextratus.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=bioextratus.com.br&t=2&s=1&h=6c69dae00abfd9184c0da11f09e4a2736c419217e93006530f218c913bca147f"
+   },
+   {
+    "rank": 9924,
+    "domain": "ecosia.org",
+    "icon": "https://site-images.similarcdn.com/image?url=ecosia.org&t=2&s=1&h=5278c0cf0866a10d3c7cfaae91dc127367e2268750ac13451bda62d7b78abde2"
+   },
+   {
+    "rank": 9925,
+    "domain": "thopgames.com",
+    "icon": "https://site-images.similarcdn.com/image?url=thopgames.com&t=2&s=1&h=549e31152e75fd45e58b09a472f266b07cd6035854a640d509102a0862dd3c8d"
+   }
+  ],
+  "globalRankCompetitors": [
+   {
+    "rank": 102749,
+    "domain": "jatimprov.edu.gr",
+    "icon": "https://site-images.similarcdn.com/image?url=jatimprov.edu.gr&t=2&s=1&h=3bda9134af9b258792bbc659e516f7b8668adfa2f765c433ceb2774a8ef259d3"
+   },
+   {
+    "rank": 102750,
+    "domain": "vivastore.shop",
+    "icon": "https://site-images.similarcdn.com/image?url=vivastore.shop&t=2&s=1&h=0745f0cfff57c5aa51e2ad9007d1edbea450c54f262b95331c9c9b1d7cfb155a"
+   },
+   {
+    "rank": 102751,
+    "domain": "bioextratus.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=bioextratus.com.br&t=2&s=1&h=6c69dae00abfd9184c0da11f09e4a2736c419217e93006530f218c913bca147f"
+   },
+   {
+    "rank": 102752,
+    "domain": "lexus.com.au",
+    "icon": "https://site-images.similarcdn.com/image?url=lexus.com.au&t=2&s=1&h=c7aa5c7300f794dc089e35ad406846783010eedbbdd4000f89a722a38e44226e"
+   },
+   {
+    "rank": 102753,
+    "domain": "wpfsms.com",
+    "icon": "https://site-images.similarcdn.com/image?url=wpfsms.com&t=2&s=1&h=fcd3cfe390269ddc35cd69c21d42004649c28666b566a3ed3c728f5ddc12b7e2"
+   }
+  ],
+  "topInterestedWebsites": [
+   {
+    "domain": "chatgpt.com",
+    "icon": "https://site-images.similarcdn.com/image?url=chatgpt.com&t=2&s=1&h=a31616ae3cdef12fcfc664127563e6092e7531e7b4c3cde7e0c8c5fd3310dfc0"
+   },
+   {
+    "domain": "mail.google.com",
+    "icon": "https://site-images.similarcdn.com/image?url=mail.google.com&t=2&s=1&h=bdc21d597156a9f81824c32b3ddedb24272ba7f1441f554aac2544fd8b723aec"
+   },
+   {
+    "domain": "instagram.com",
+    "icon": "https://site-images.similarcdn.com/image?url=instagram.com&t=2&s=1&h=acbe9ff09f263f0114ce8473b3d3e401bfdc360d5aff845e04182e8d2335ba49"
+   },
+   {
+    "domain": "youtube.com",
+    "icon": "https://site-images.similarcdn.com/image?url=youtube.com&t=2&s=1&h=e117fb09ba0a34dee9830863bf927d29fc864e342583a36a667bf12346e88e20"
+   },
+   {
+    "domain": "google.com",
+    "icon": "https://site-images.similarcdn.com/image?url=google.com&t=2&s=1&h=eb35e0fbafa3eb290132ffdfe47187d950d68daaa659ec1bd4b4e834b8f16461"
+   }
+  ],
+  "topInterestedTopics": [
+   "beautiful",
+   "instagram",
+   "iphone",
+   "photo sharing",
+   "sharing"
+  ],
+  "topInterestedCategories": [
+   "ai_chatbots_and_tools",
+   "computers_electronics_and_technology/email",
+   "computers_electronics_and_technology/social_networks_and_online_communities",
+   "arts_and_entertainment/tv_movies_and_streaming",
+   "computers_electronics_and_technology/search_engines"
+  ],
+  "technologies": [
+   {
+    "categoryId": "payment_and_currencies",
+    "topTechName": "Cart Functionality",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=2901",
+    "technologiesTotalCount": 27
+   },
+   {
+    "categoryId": "advertising",
+    "topTechName": "DoubleClick",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=239",
+    "technologiesTotalCount": 20
+   },
+   {
+    "categoryId": "conversion_and_analytics",
+    "topTechName": "Google Analytics",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=1",
+    "technologiesTotalCount": 12
+   },
+   {
+    "categoryId": "social",
+    "topTechName": "Instagram",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=2841",
+    "technologiesTotalCount": 6
+   }
+  ],
+  "ageDistribution": [
+   {
+    "minAge": 25,
+    "maxAge": 34,
+    "value": 0.24868397863968758
+   },
+   {
+    "minAge": 18,
+    "maxAge": 24,
+    "value": 0.18261505013374857
+   },
+   {
+    "minAge": 35,
+    "maxAge": 44,
+    "value": 0.1802723631345013
+   },
+   {
+    "minAge": 45,
+    "maxAge": 54,
+    "value": 0.168102414555675
+   },
+   {
+    "minAge": 55,
+    "maxAge": 64,
+    "value": 0.12252091753527958
+   },
+   {
+    "minAge": 65,
+    "maxAge": null,
+    "value": 0.09780527600110808
+   }
+  ],
+  "maleDistribution": 0.34109398277478137,
+  "femaleDistribution": 0.6589060172252186,
+  "scrapedAt": "2026-09-29T02:37:40.919Z",
+  "snapshotDate": "2026-08-01T00:00:00+00:00"
+ },
+ {
+  "url": "https://www.similarweb.com/website/salonline.com.br",
+  "name": "salonline.com.br",
+  "description": "O Creme para Pentear Antiporosidade Fluido Ultra Gloss S.O.S Cachos De Repente Pronta! promove revitalização imediata, garantindo definição, brilho intenso e maciez profunda. Ideal para renovar os cacheados e crespos no day after. Garante cachos revitalizados em 1 minuto.",
+  "icon": "https://site-images.similarcdn.com/image?url=salonline.com.br&t=2&s=1&h=fd1584fba0ab15e761997ecbaebbb9b057f0d41796c1b129be27faacbfb492df",
+  "previewDesktop": "https://site-images.similarcdn.com/image?url=salonline.com.br&t=1&s=1&h=fd1584fba0ab15e761997ecbaebbb9b057f0d41796c1b129be27faacbfb492df",
+  "previewMobile": "https://site-images.similarcdn.com/image?url=salonline.com.br&t=4&s=1&h=fd1584fba0ab15e761997ecbaebbb9b057f0d41796c1b129be27faacbfb492df",
+  "globalRank": 29750,
+  "countryRank": 2024,
+  "categoryRank": 18,
+  "categoryId": "lifestyle/beauty_and_cosmetics",
+  "companyYearFounded": null,
+  "companyName": "Salon Line",
+  "companyEmployeesMin": 1001,
+  "companyEmployeesMax": 5000,
+  "companyAnnualRevenueMin": null,
+  "companyHeadquarterCountryCode": "BR",
+  "companyHeadquarterStateCode": null,
+  "companyHeadquarterCity": "Jandira",
+  "avgVisitDuration": "00:01:28",
+  "pagesPerVisit": "2.07",
+  "bounceRate": 0.6254744793680106,
+  "totalVisits": 2293205,
+  "trafficSources": [
+   {
+    "source": "ads",
+    "rank": 1,
+    "percentage": 0.5059655183401159,
+    "isHigher": null
+   },
+   {
+    "source": "social_paid",
+    "rank": 2,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "paid",
+    "rank": 3,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "direct",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "organic",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "social_organic",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "referrals",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "gen_ai",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "mail",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "affiliate",
+    "rank": -1,
+    "percentage": null,
+    "isHigher": null
+   }
+  ],
+  "adsSource": [
+   {
+    "domain": "",
+    "icon": "",
+    "visitsShare": 0.33142552088828653,
+    "isLocked": true,
+    "isAvailable": true
+   },
+   {
+    "domain": "",
+    "icon": "",
+    "visitsShare": 0.33142552088828653,
+    "isLocked": true,
+    "isAvailable": true
+   },
+   {
+    "domain": "globo.com",
+    "icon": "https://site-images.similarcdn.com/image?url=globo.com&t=2&s=1&h=d43aa75cabc939383c66271b0de2de1cce20a20180a27cb130bf5d699031211e",
+    "visitsShare": 0.13992708833901524,
+    "isLocked": false,
+    "isAvailable": true
+   },
+   {
+    "domain": "todamateria.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=todamateria.com.br&t=2&s=1&h=fbc7c2cf20e03fa561cdb370ec23bd8d87c360ec5b408abc6bd266fef07c2030",
+    "visitsShare": 0.13540246537685366,
+    "isLocked": false,
+    "isAvailable": true
+   },
+   {
+    "domain": "meutimao.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=meutimao.com.br&t=2&s=1&h=2aceb2bce9b63b9ef7a5d088712218299e9ab9c32bc6319d2f816e771772712a",
+    "visitsShare": 0.011666221670922008,
+    "isLocked": false,
+    "isAvailable": true
+   }
+  ],
+  "topKeywords": [
+   {
+    "name": "salon line",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.27
+   },
+   {
+    "name": "salonline",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.27
+   },
+   {
+    "name": "migs salon line",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.06
+   },
+   {
+    "name": "body splash",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.31
+   },
+   {
+    "name": "mascara matizadora salon line",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.11
+   }
+  ],
+  "organicTraffic": 0.6610740643164386,
+  "paidTraffic": 0.33892593568356144,
+  "topReferrals": [
+   {
+    "domain": "",
+    "icon": "",
+    "visitsShare": 0.972387793408699,
+    "isLocked": true,
+    "isAvailable": true
+   },
+   {
+    "domain": "",
+    "icon": "",
+    "visitsShare": 0.002583580274516331,
+    "isLocked": true,
+    "isAvailable": true
+   },
+   {
+    "domain": "",
+    "icon": "",
+    "visitsShare": 0.0008771238476980185,
+    "isLocked": true,
+    "isAvailable": true
+   },
+   {
+    "domain": "whatsmydns.net",
+    "icon": "https://site-images.similarcdn.com/image?url=whatsmydns.net&t=2&s=1&h=ff2504517f6d10f7f19f3305ae58e6e0505725173c9c89101e8ba34c2004050d",
+    "visitsShare": 0.000457148346175996,
+    "isLocked": false,
+    "isAvailable": true
+   }
+  ],
+  "socialNetworkDistribution": [
+   {
+    "name": "Pinterest",
+    "visitsShare": 0.8003092693433892,
+    "icon": "https://site-images.similarcdn.com/image?url=pinterest.com&t=2&s=1&h=ec976160ca16242c6ab9ed7bc48e7b0f04c4100ceac5bcb6d3ea55450aa12210"
+   },
+   {
+    "name": "Instagram",
+    "visitsShare": 0.1996907306566107,
+    "icon": "https://site-images.similarcdn.com/image?url=instagram.com&t=2&s=1&h=acbe9ff09f263f0114ce8473b3d3e401bfdc360d5aff845e04182e8d2335ba49"
+   }
+  ],
+  "topCountries": [
+   {
+    "countryAlpha2Code": "BR",
+    "countryAlpha2CodeRaw": "BR",
+    "countryUrlCode": "brazil",
+    "visitsShare": 0.8986157869673336,
+    "visitsShareChange": -0.4734208505073221
+   },
+   {
+    "countryAlpha2Code": "PT",
+    "countryAlpha2CodeRaw": "PT",
+    "countryUrlCode": "portugal",
+    "visitsShare": 0.02572148674643288,
+    "visitsShareChange": -0.06247157424225669
+   },
+   {
+    "countryAlpha2Code": "US",
+    "countryAlpha2CodeRaw": "US",
+    "countryUrlCode": "united-states",
+    "visitsShare": 0.021034855196896754,
+    "visitsShareChange": -0.15526801627246
+   },
+   {
+    "countryAlpha2Code": "AR",
+    "countryAlpha2CodeRaw": "AR",
+    "countryUrlCode": "argentina",
+    "visitsShare": 0.011990964104235936,
+    "visitsShareChange": 0.04333231217179723
+   },
+   {
+    "countryAlpha2Code": "FR",
+    "countryAlpha2CodeRaw": "FR",
+    "countryUrlCode": "france",
+    "visitsShare": 0.010922155023673722,
+    "visitsShareChange": 1.1971079028254117
+   }
+  ],
+  "topSimilarityCompetitors": [
+   {
+    "domain": "foreverliss.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=foreverliss.com.br&t=2&s=1&h=7e79c5518628f9ce4bb3ca36f1085861cb26d81c78d258af66fa54ad1ec14a1a",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 865,
+    "affinity": 1,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "loreal-paris.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=loreal-paris.com.br&t=2&s=1&h=b3f901f394dfb6be0c8c43bb29ba81ee92396f76bd4638dbc5020a89d6c8c0f6",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 115,
+    "affinity": 0.9764705882352941,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "eudora.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=eudora.com.br&t=2&s=1&h=bc0ecda21677410cfb541803b89b8dc13eb82f990ee5f0f8d22cad74322d9c44",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 58,
+    "affinity": 0.9529411764705883,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "belezanatural.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=belezanatural.com.br&t=2&s=1&h=9bdd9a1099d17e42d0ab91361b1a268e05d3eaeaf6a6d40ece53b1b5e99f3ac2",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 6295,
+    "affinity": 0.9294117647058824,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "ikesaki.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=ikesaki.com.br&t=2&s=1&h=227bea6f13902b3ae5c6599bf035adb8123d93b3b0c8d6577cc00ec5800515a2",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 1398,
+    "affinity": 0.9176470588235295,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "apicecosmeticos.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=apicecosmeticos.com.br&t=2&s=1&h=c8bb5c7e3e87378234b97142d465cfab8192f0ad06da3f8145b71dc8047b0d1b",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 171,
+    "affinity": 0.8941176470588236,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "lojaraizlatina.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=lojaraizlatina.com.br&t=2&s=1&h=c8c231b95f7d0fc34fb43f445dbea3d368c324477d0bae4539a4c76ed14fd1bd",
+    "categoryId": "",
+    "categoryRank": null,
+    "affinity": 0.8705882352941177,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "vult.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=vult.com.br&t=2&s=1&h=44ffbd830c82616767ee2ffeeba9a2b7120fbafbbb5eaa14ff90037328b985a7",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 1723,
+    "affinity": 0.8588235294117647,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "boorala.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=boorala.com.br&t=2&s=1&h=2a43f08f4d1ae87ed59f4222355384256a51421b27d51476b2774b5531a6be2a",
+    "categoryId": "",
+    "categoryRank": null,
+    "affinity": 0.8470588235294118,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "trussprofessional.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=trussprofessional.com.br&t=2&s=1&h=f3cb33914ed183577e9e651c3ff4aedd18b49f8f1a83bbd8bbefdcc727e871a4",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 2648,
+    "affinity": 0.8352941176470589,
+    "isDataFromGa": false
+   }
+  ],
+  "countryRankCompetitors": [
+   {
+    "rank": 2022,
+    "domain": "6sxb4j.com",
+    "icon": "https://site-images.similarcdn.com/image?url=6sxb4j.com&t=2&s=1&h=d98b1ec0f8c0ef140cecf52980369a321f2923d9351b223b8f6ff36907c44809"
+   },
+   {
+    "rank": 2023,
+    "domain": "jornaldacidadeonline.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=jornaldacidadeonline.com.br&t=2&s=1&h=e9b7768065cf561f81515668ddea0159cbd1ae2a8b75fdd087e8c06b3415d6a5"
+   },
+   {
+    "rank": 2024,
+    "domain": "salonline.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=salonline.com.br&t=2&s=1&h=fd1584fba0ab15e761997ecbaebbb9b057f0d41796c1b129be27faacbfb492df"
+   },
+   {
+    "rank": 2025,
+    "domain": "el.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=el.com.br&t=2&s=1&h=8e76dced951d5c2ddf81225992854765e41056ec952bf7ed5b62d48ce29e8a60"
+   },
+   {
+    "rank": 2026,
+    "domain": "bbttbet555.com",
+    "icon": "https://site-images.similarcdn.com/image?url=bbttbet555.com&t=2&s=1&h=ba13d47825a061e22bf04c44b1ff74d2fdefab188e622d9240a3e36d0cde758b"
+   }
+  ],
+  "globalRankCompetitors": [
+   {
+    "rank": 29748,
+    "domain": "thenkiri.com.ng",
+    "icon": "https://site-images.similarcdn.com/image?url=thenkiri.com.ng&t=2&s=1&h=c6c952e768d7d0277b116c7d008ca4bff15faf9c2d6e451ce32006ee945b7740"
+   },
+   {
+    "rank": 29749,
+    "domain": "fsel.edu.vn",
+    "icon": "https://site-images.similarcdn.com/image?url=fsel.edu.vn&t=2&s=1&h=320ee84c99803a6287dd5e775093a856e7b4c9ffc185c6acdf852e3d0a2c7008"
+   },
+   {
+    "rank": 29750,
+    "domain": "salonline.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=salonline.com.br&t=2&s=1&h=fd1584fba0ab15e761997ecbaebbb9b057f0d41796c1b129be27faacbfb492df"
+   },
+   {
+    "rank": 29751,
+    "domain": "green-acres.fr",
+    "icon": "https://site-images.similarcdn.com/image?url=green-acres.fr&t=2&s=1&h=0b0466ea4655a708db02828c17aa782895b47879e342f42eb704be6ce794d092"
+   },
+   {
+    "rank": 29752,
+    "domain": "premier-kladionica.com",
+    "icon": "https://site-images.similarcdn.com/image?url=premier-kladionica.com&t=2&s=1&h=33150ea57b984cb241cb46f0747873fdd0c59c7e8432a7c7a42a2850f1177074"
+   }
+  ],
+  "topInterestedWebsites": [
+   {
+    "domain": "sso.acesso.gov.br",
+    "icon": "https://site-images.similarcdn.com/image?url=sso.acesso.gov.br&t=2&s=1&h=f5cbee16b339264210c6b7a0e2ae197e048d6315ef9cc11307bba60ee3670a18"
+   },
+   {
+    "domain": "linkedin.com",
+    "icon": "https://site-images.similarcdn.com/image?url=linkedin.com&t=2&s=1&h=64a0e043fc8ff74ac308e3f0e136ae7d1b6544be4e9e704ad7fd062070be48a1"
+   },
+   {
+    "domain": "myaccount.mercadolivre.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=myaccount.mercadolivre.com.br&t=2&s=1&h=c1a65aef299cc2d217efb202bf1e3f4a728bb69e4cd8f6c804a2374fbb2f3d21"
+   },
+   {
+    "domain": "br.pinterest.com",
+    "icon": "https://site-images.similarcdn.com/image?url=br.pinterest.com&t=2&s=1&h=f1143bd58f1a4f8292a569078df47dd5dbfc7e1ebc2e4a85bf367abadf7ec05e"
+   },
+   {
+    "domain": "canva.com",
+    "icon": "https://site-images.similarcdn.com/image?url=canva.com&t=2&s=1&h=76c69b938e0fc8e4bebe1e545dba8f4ad7bd78aec8c65f149f36030ee1036a65"
+   }
+  ],
+  "topInterestedTopics": [
+   "social network",
+   "community",
+   "social",
+   "social media",
+   "social networking"
+  ],
+  "topInterestedCategories": [
+   "e-commerce_and_shopping/marketplace",
+   "computers_electronics_and_technology/social_networks_and_online_communities",
+   "ai_chatbots_and_tools",
+   "law_and_government/government",
+   "computers_electronics_and_technology/search_engines"
+  ],
+  "technologies": [
+   {
+    "categoryId": "advertising",
+    "topTechName": "Google Adsense",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=237",
+    "technologiesTotalCount": 39
+   },
+   {
+    "categoryId": "payment_and_currencies",
+    "topTechName": "Cart Functionality",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=2901",
+    "technologiesTotalCount": 24
+   },
+   {
+    "categoryId": "conversion_and_analytics",
+    "topTechName": "Google Analytics",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=1",
+    "technologiesTotalCount": 12
+   },
+   {
+    "categoryId": "social",
+    "topTechName": "Google+ Platform",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=1345",
+    "technologiesTotalCount": 8
+   }
+  ],
+  "ageDistribution": [
+   {
+    "minAge": 25,
+    "maxAge": 34,
+    "value": 0.2599211182802553
+   },
+   {
+    "minAge": 18,
+    "maxAge": 24,
+    "value": 0.21549711569109053
+   },
+   {
+    "minAge": 35,
+    "maxAge": 44,
+    "value": 0.19365273638547245
+   },
+   {
+    "minAge": 45,
+    "maxAge": 54,
+    "value": 0.15306738010219642
+   },
+   {
+    "minAge": 55,
+    "maxAge": 64,
+    "value": 0.10121780945407424
+   },
+   {
+    "minAge": 65,
+    "maxAge": null,
+    "value": 0.07664384008691104
+   }
+  ],
+  "maleDistribution": 0.3985762344937651,
+  "femaleDistribution": 0.6014237655062349,
+  "scrapedAt": "2026-09-29T02:37:41.614Z",
+  "snapshotDate": "2026-08-01T00:00:00+00:00"
+ },
+ {
+  "url": "https://www.similarweb.com/website/skala.com.br",
+  "name": "skala.com.br",
+  "description": "Celebre! Você encontrou a Skala Cosméticos e nós encontramos você. Somos 100% veganos e entendemos que ninguém precisa pagar mais caro para fazer a diferença no mundo.",
+  "icon": "https://site-images.similarcdn.com/image?url=skala.com.br&t=2&s=1&h=0fdf28ac356a5fcae200565d7e97c083d92cf4503bb539eabcc25cda95beda9b",
+  "previewDesktop": "https://site-images.similarcdn.com/image?url=skala.com.br&t=1&s=1&h=0fdf28ac356a5fcae200565d7e97c083d92cf4503bb539eabcc25cda95beda9b",
+  "previewMobile": "https://site-images.similarcdn.com/image?url=skala.com.br&t=4&s=1&h=0fdf28ac356a5fcae200565d7e97c083d92cf4503bb539eabcc25cda95beda9b",
+  "globalRank": 462378,
+  "countryRank": 50479,
+  "categoryRank": 184,
+  "categoryId": "lifestyle/beauty_and_cosmetics",
+  "companyYearFounded": null,
+  "companyName": "Skala",
+  "companyEmployeesMin": 1001,
+  "companyEmployeesMax": 5000,
+  "companyAnnualRevenueMin": 1000000,
+  "companyHeadquarterCountryCode": "BR",
+  "companyHeadquarterStateCode": null,
+  "companyHeadquarterCity": "Uberlândia",
+  "avgVisitDuration": "00:01:56",
+  "pagesPerVisit": "3.58",
+  "bounceRate": 0.5348166592929342,
+  "totalVisits": 61373,
+  "trafficSources": [
+   {
+    "source": "organic",
+    "rank": 1,
+    "percentage": 0.6183280741757291,
+    "isHigher": null
+   },
+   {
+    "source": "direct",
+    "rank": 2,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "ads",
+    "rank": 3,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "referrals",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "social_organic",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "gen_ai",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "mail",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "paid",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "social_paid",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "affiliate",
+    "rank": -1,
+    "percentage": null,
+    "isHigher": null
+   }
+  ],
+  "adsSource": [
+   {
+    "domain": "",
+    "icon": "",
+    "visitsShare": 0.12270138649306755,
+    "isLocked": true,
+    "isAvailable": true
+   },
+   {
+    "domain": "",
+    "icon": "",
+    "visitsShare": 0.11746441267793664,
+    "isLocked": true,
+    "isAvailable": true
+   },
+   {
+    "domain": "faceit.com",
+    "icon": "https://site-images.similarcdn.com/image?url=faceit.com&t=2&s=1&h=2259390e5bed4467b997cab1be419b2cb8060c98661bd7df51de5be107f128cd",
+    "visitsShare": 0.06219868900655497,
+    "isLocked": false,
+    "isAvailable": true
+   },
+   {
+    "domain": "olimpiadatododia.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=olimpiadatododia.com.br&t=2&s=1&h=a70346e11e6d8bdc572227c6d3a996cd9464d6df99030611ef42ef6a7b64a138",
+    "visitsShare": 0.059061704691476556,
+    "isLocked": false,
+    "isAvailable": true
+   },
+   {
+    "domain": "olx.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=olx.com.br&t=2&s=1&h=6804ba4f27651e38a8bd71f4342d24d2de72d0c0a163860df9ccac5456fec6d0",
+    "visitsShare": 0.056644716776416124,
+    "isLocked": false,
+    "isAvailable": true
+   }
+  ],
+  "topKeywords": [
+   {
+    "name": "skala",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.32
+   },
+   {
+    "name": "skala cosméticos",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.2
+   },
+   {
+    "name": "skala line maria natureza manteiga de karité creme finalizador",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": null
+   },
+   {
+    "name": "skala mais cachos",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.15
+   },
+   {
+    "name": "skala lama negra",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.09
+   }
+  ],
+  "organicTraffic": 1,
+  "paidTraffic": 0,
+  "topReferrals": [],
+  "socialNetworkDistribution": [],
+  "topCountries": [
+   {
+    "countryAlpha2Code": "BR",
+    "countryAlpha2CodeRaw": "BR",
+    "countryUrlCode": "brazil",
+    "visitsShare": 0.7209553216280895,
+    "visitsShareChange": -0.22298754784856312
+   },
+   {
+    "countryAlpha2Code": "US",
+    "countryAlpha2CodeRaw": "US",
+    "countryUrlCode": "united-states",
+    "visitsShare": 0.11214537647205748,
+    "visitsShareChange": -0.041119105777387976
+   },
+   {
+    "countryAlpha2Code": "GB",
+    "countryAlpha2CodeRaw": "GB",
+    "countryUrlCode": "united-kingdom",
+    "visitsShare": 0.05654737310417522,
+    "visitsShareChange": 5.650077683306048
+   },
+   {
+    "countryAlpha2Code": "PT",
+    "countryAlpha2CodeRaw": "PT",
+    "countryUrlCode": "portugal",
+    "visitsShare": 0.04883010520320099,
+    "visitsShareChange": 0.05665814469308117
+   },
+   {
+    "countryAlpha2Code": "AR",
+    "countryAlpha2CodeRaw": "AR",
+    "countryUrlCode": "argentina",
+    "visitsShare": 0.03843689042177812,
+    "visitsShareChange": 0.2853379312819877
+   }
+  ],
+  "topSimilarityCompetitors": [
+   {
+    "domain": "skalabrasil.com",
+    "icon": "https://site-images.similarcdn.com/image?url=skalabrasil.com&t=2&s=1&h=c859e1278cd6414c37bdeb3273b95fe974231932b5f060812c58724b9c60ac27",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 5261,
+    "affinity": 1,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "ciganabeleza.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=ciganabeleza.com.br&t=2&s=1&h=2346fb85d0fa17cac821aa13241633e3f91a57f1c912620494dfbd019db5c961",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 4837,
+    "affinity": 0.9021739130434782,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "leocosmeticos.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=leocosmeticos.com.br&t=2&s=1&h=0f6a6367f4bbefed5c2aabc51dad7afbed956b4818ab67c4fc467089f2c0518b",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 11672,
+    "affinity": 0.8695652173913043,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "royalcosmeticos.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=royalcosmeticos.com.br&t=2&s=1&h=240ad4d64d517b420d2b9b1cdf0272d818b863a746687db3caa5422af4fb7279",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 19062,
+    "affinity": 0.8478260869565217,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "melinda.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=melinda.com.br&t=2&s=1&h=7b2768a20ce14053ad5ec81538f1266e6d060c70866e9f5a5e7c83b93d553eea",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 7987,
+    "affinity": 0.8260869565217391,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "essenciadifiori.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=essenciadifiori.com.br&t=2&s=1&h=9b73b93dbebd77b7dc194446664e45261bdc72fc8d8c4254cb280422e5b0ca05",
+    "categoryId": "",
+    "categoryRank": null,
+    "affinity": 0.8043478260869564,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "skalatratamientos.com",
+    "icon": "https://site-images.similarcdn.com/image?url=skalatratamientos.com&t=2&s=1&h=5829ea7bc7dab5d9b548b18d90d23c53d00d9042808c92cc0e61ad7e684a1048",
+    "categoryId": "",
+    "categoryRank": null,
+    "affinity": 0.7826086956521738,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "sevichoficial.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=sevichoficial.com.br&t=2&s=1&h=18b7ea012ebb1647575b73a295a93c3a9004c9ead72ef481d7a63f9f383ae414",
+    "categoryId": "",
+    "categoryRank": null,
+    "affinity": 0.717391304347826,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "zojja.co",
+    "icon": "https://site-images.similarcdn.com/image?url=zojja.co&t=2&s=1&h=2fe287b6b2aab950d21a08f6689b82e8253f1d5e5f33932116f93623db260ad2",
+    "categoryId": "computers_electronics_and_technology/social_networks_and_online_communities",
+    "categoryRank": 3986,
+    "affinity": 0.6739130434782609,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "fairytaleshaircare.com",
+    "icon": "https://site-images.similarcdn.com/image?url=fairytaleshaircare.com&t=2&s=1&h=0b0d62171dd8f2b249b6271919c114dd72c4462d3b5f8340200384b092d4bc4b",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 2972,
+    "affinity": 0.6521739130434782,
+    "isDataFromGa": false
+   }
+  ],
+  "countryRankCompetitors": [
+   {
+    "rank": 50477,
+    "domain": "u7z7zz.com",
+    "icon": "https://site-images.similarcdn.com/image?url=u7z7zz.com&t=2&s=1&h=c3d37edf78811638bf55f8ae49961f7e5d8d04588aac48f7c80cc42d1b262b8c"
+   },
+   {
+    "rank": 50478,
+    "domain": "umavidaextraordinaria.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=umavidaextraordinaria.com.br&t=2&s=1&h=369ba79d6ab46283ae57cf017203043efa66df0bb07bda1b99e6db7d412f0492"
+   },
+   {
+    "rank": 50479,
+    "domain": "skala.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=skala.com.br&t=2&s=1&h=0fdf28ac356a5fcae200565d7e97c083d92cf4503bb539eabcc25cda95beda9b"
+   },
+   {
+    "rank": 50480,
+    "domain": "sevenwinbet.site",
+    "icon": "https://site-images.similarcdn.com/image?url=sevenwinbet.site&t=2&s=1&h=cc78c7811415a13e2bf0c397367670b9f093d0d7cab345234b78fd2e29f7e458"
+   },
+   {
+    "rank": 50481,
+    "domain": "wuups.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=wuups.com.br&t=2&s=1&h=c981d0ccdd17ae022e7081053489f1eb7669897dcc57d97e95259ce4cb3a7932"
+   }
+  ],
+  "globalRankCompetitors": [
+   {
+    "rank": 462376,
+    "domain": "stewartbunn.com",
+    "icon": "https://site-images.similarcdn.com/image?url=stewartbunn.com&t=2&s=1&h=c9f71f93fce5149056bc3e3186886a878bbd30d578cccdff8314e336d0377fdc"
+   },
+   {
+    "rank": 462377,
+    "domain": "dostuffmedia.com",
+    "icon": "https://site-images.similarcdn.com/image?url=dostuffmedia.com&t=2&s=1&h=054566a99ebec75572738ce9af41bae151459431ed156c2c59673642fe3456c5"
+   },
+   {
+    "rank": 462378,
+    "domain": "skala.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=skala.com.br&t=2&s=1&h=0fdf28ac356a5fcae200565d7e97c083d92cf4503bb539eabcc25cda95beda9b"
+   },
+   {
+    "rank": 462379,
+    "domain": "access-honda.com",
+    "icon": "https://site-images.similarcdn.com/image?url=access-honda.com&t=2&s=1&h=987b2c467b9947b0d58392a70555191c4560b4c14fc9a711622a75dc9b125488"
+   },
+   {
+    "rank": 462380,
+    "domain": "099q222.com",
+    "icon": "https://site-images.similarcdn.com/image?url=099q222.com&t=2&s=1&h=bcf57219e3232198aaa9d3dcb074d980ec7182c247a61ec3cf753da791fd7108"
+   }
+  ],
+  "topInterestedWebsites": [
+   {
+    "domain": "youtube.com",
+    "icon": "https://site-images.similarcdn.com/image?url=youtube.com&t=2&s=1&h=e117fb09ba0a34dee9830863bf927d29fc864e342583a36a667bf12346e88e20"
+   },
+   {
+    "domain": "google.com",
+    "icon": "https://site-images.similarcdn.com/image?url=google.com&t=2&s=1&h=eb35e0fbafa3eb290132ffdfe47187d950d68daaa659ec1bd4b4e834b8f16461"
+   }
+  ],
+  "topInterestedTopics": [
+   "music videos",
+   "social network",
+   "video equipment",
+   "youtube",
+   "youtube videos"
+  ],
+  "topInterestedCategories": [
+   "arts_and_entertainment/tv_movies_and_streaming",
+   "computers_electronics_and_technology/search_engines"
+  ],
+  "technologies": [
+   {
+    "categoryId": "social",
+    "topTechName": "Instagram",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=2841",
+    "technologiesTotalCount": 7
+   },
+   {
+    "categoryId": "advertising",
+    "topTechName": "Facebook Custom Audiences",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=1334",
+    "technologiesTotalCount": 2
+   },
+   {
+    "categoryId": "conversion_and_analytics",
+    "topTechName": "Google Analytics",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=1",
+    "technologiesTotalCount": 2
+   },
+   {
+    "categoryId": "widget",
+    "topTechName": "reCAPTCHA",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=1952",
+    "technologiesTotalCount": 2
+   }
+  ],
+  "ageDistribution": [
+   {
+    "minAge": 25,
+    "maxAge": 34,
+    "value": 0.28934784388104096
+   },
+   {
+    "minAge": 18,
+    "maxAge": 24,
+    "value": 0.19767183679665062
+   },
+   {
+    "minAge": 35,
+    "maxAge": 44,
+    "value": 0.19193636203080278
+   },
+   {
+    "minAge": 45,
+    "maxAge": 54,
+    "value": 0.14620474039713527
+   },
+   {
+    "minAge": 55,
+    "maxAge": 64,
+    "value": 0.12122419587896635
+   },
+   {
+    "minAge": 65,
+    "maxAge": null,
+    "value": 0.053615021015403844
+   }
+  ],
+  "maleDistribution": 0.4849359682054834,
+  "femaleDistribution": 0.5150640317945165,
+  "scrapedAt": "2026-09-29T02:38:02.834Z",
+  "snapshotDate": "2026-08-01T00:00:00+00:00"
+ },
+ {
+  "url": "https://www.similarweb.com/website/lolacosmetics.com.br",
+  "name": "lolacosmetics.com.br",
+  "description": "RAPUNZEL TONICO DO CRESCIMENTO 250mL",
+  "icon": "https://site-images.similarcdn.com/image?url=lolacosmetics.com.br&t=2&s=1&h=eeb4e690d84690746c636e904edc6223a79c30fe31e7819cb755dfd6fafd99ab",
+  "previewDesktop": "https://site-images.similarcdn.com/image?url=lolacosmetics.com.br&t=1&s=1&h=eeb4e690d84690746c636e904edc6223a79c30fe31e7819cb755dfd6fafd99ab",
+  "previewMobile": "https://site-images.similarcdn.com/image?url=lolacosmetics.com.br&t=4&s=1&h=eeb4e690d84690746c636e904edc6223a79c30fe31e7819cb755dfd6fafd99ab",
+  "globalRank": null,
+  "countryRank": null,
+  "categoryRank": null,
+  "categoryId": "lifestyle/beauty_and_cosmetics",
+  "companyYearFounded": 2011,
+  "companyName": "Lola Cosmetics",
+  "companyEmployeesMin": 201,
+  "companyEmployeesMax": 500,
+  "companyAnnualRevenueMin": 25000000,
+  "companyHeadquarterCountryCode": "BR",
+  "companyHeadquarterStateCode": null,
+  "companyHeadquarterCity": "Rio de Janeiro",
+  "avgVisitDuration": "00:01:28",
+  "pagesPerVisit": "3.27",
+  "bounceRate": 0.422785083560065,
+  "totalVisits": 195150,
+  "trafficSources": [
+   {
+    "source": "organic",
+    "rank": 1,
+    "percentage": 0.44546341951603124,
+    "isHigher": null
+   },
+   {
+    "source": "direct",
+    "rank": 2,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "paid",
+    "rank": 3,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "ads",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "mail",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "social_organic",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "social_paid",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "gen_ai",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "referrals",
+    "rank": null,
+    "percentage": null,
+    "isHigher": null
+   },
+   {
+    "source": "affiliate",
+    "rank": -1,
+    "percentage": null,
+    "isHigher": null
+   }
+  ],
+  "adsSource": [
+   {
+    "domain": "",
+    "icon": "",
+    "visitsShare": 0.2420437579562421,
+    "isLocked": true,
+    "isAvailable": true
+   },
+   {
+    "domain": "",
+    "icon": "",
+    "visitsShare": 0.2420437579562421,
+    "isLocked": true,
+    "isAvailable": true
+   },
+   {
+    "domain": "systeme.io",
+    "icon": "https://site-images.similarcdn.com/image?url=systeme.io&t=2&s=1&h=551b2fbb579eb81495f1870204b4f93d71fa2a7b1bc7cecbb0835b5dbbbc62ec",
+    "visitsShare": 0.2420437579562421,
+    "isLocked": false,
+    "isAvailable": true
+   },
+   {
+    "domain": "canva.com",
+    "icon": "https://site-images.similarcdn.com/image?url=canva.com&t=2&s=1&h=76c69b938e0fc8e4bebe1e545dba8f4ad7bd78aec8c65f149f36030ee1036a65",
+    "visitsShare": 0.04034095965904035,
+    "isLocked": false,
+    "isAvailable": true
+   },
+   {
+    "domain": "descontostop.com",
+    "icon": "https://site-images.similarcdn.com/image?url=descontostop.com&t=2&s=1&h=4cbebbbdae6e090d53a2d2f03e3f504f36d92a5bfd9857a76b0a6086ef801e53",
+    "visitsShare": 0.04034095965904035,
+    "isLocked": false,
+    "isAvailable": true
+   }
+  ],
+  "topKeywords": [
+   {
+    "name": "lola cosmetics",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.13
+   },
+   {
+    "name": "lola",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.58
+   },
+   {
+    "name": "tonico rapunzel",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.13
+   },
+   {
+    "name": "lola cosmetic",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.12
+   },
+   {
+    "name": "lolacosmetics",
+    "estimatedValue": null,
+    "volume": null,
+    "cpc": 0.12
+   }
+  ],
+  "organicTraffic": 0.6819885373479919,
+  "paidTraffic": 0.3180114626520081,
+  "topReferrals": [
+   {
+    "domain": "",
+    "icon": "",
+    "visitsShare": 0.691937667817212,
+    "isLocked": true,
+    "isAvailable": true
+   },
+   {
+    "domain": "",
+    "icon": "",
+    "visitsShare": 0.22469522201703565,
+    "isLocked": true,
+    "isAvailable": true
+   }
+  ],
+  "socialNetworkDistribution": [
+   {
+    "name": "Instagram",
+    "visitsShare": 1,
+    "icon": "https://site-images.similarcdn.com/image?url=instagram.com&t=2&s=1&h=acbe9ff09f263f0114ce8473b3d3e401bfdc360d5aff845e04182e8d2335ba49"
+   }
+  ],
+  "topCountries": [
+   {
+    "countryAlpha2Code": "BR",
+    "countryAlpha2CodeRaw": "BR",
+    "countryUrlCode": "brazil",
+    "visitsShare": 0.8832612108183538,
+    "visitsShareChange": -0.11526708864690438
+   },
+   {
+    "countryAlpha2Code": "PT",
+    "countryAlpha2CodeRaw": "PT",
+    "countryUrlCode": "portugal",
+    "visitsShare": 0.04213457454589626,
+    "visitsShareChange": 0.012482468164679128
+   },
+   {
+    "countryAlpha2Code": "US",
+    "countryAlpha2CodeRaw": "US",
+    "countryUrlCode": "united-states",
+    "visitsShare": 0.021389590187122266,
+    "visitsShareChange": 0.5222602292292791
+   },
+   {
+    "countryAlpha2Code": "CO",
+    "countryAlpha2CodeRaw": "CO",
+    "countryUrlCode": "colombia",
+    "visitsShare": 0.010651644791435636,
+    "visitsShareChange": -0.5241592889673634
+   },
+   {
+    "countryAlpha2Code": "CL",
+    "countryAlpha2CodeRaw": "CL",
+    "countryUrlCode": "chile",
+    "visitsShare": 0.010570759396613847,
+    "visitsShareChange": -0.4677846091046719
+   }
+  ],
+  "topSimilarityCompetitors": [
+   {
+    "domain": "epocacosmeticos.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=epocacosmeticos.com.br&t=2&s=1&h=371042cc7124435078559260104a6bc227e17346cffeaa93ae916268a3583b5b",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 53,
+    "affinity": 1,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "lindacosmeticos.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=lindacosmeticos.com.br&t=2&s=1&h=41dfafc80751814b3d96c88110d0c2eb0df80ba4af40e31ff2b7dfb4ee6e7ef0",
+    "categoryId": "",
+    "categoryRank": null,
+    "affinity": 0.9239130434782608,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "amobeleza.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=amobeleza.com.br&t=2&s=1&h=8f977828b92acc7d6d0098a31b054800096396db37a6fdd5ddf66417d7933aca",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 1670,
+    "affinity": 0.9021739130434782,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "dermabox.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=dermabox.com.br&t=2&s=1&h=d810b07eca6e01413ddae95c78269ca8da346bac4c596ac8ac1f21dfea99a73b",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 9390,
+    "affinity": 0.8804347826086957,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "meucabelonatural.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=meucabelonatural.com.br&t=2&s=1&h=2ec04afee1efd174a975bc71d27c3cc34e1f16c8ac66c004f91f9e03ac7577a1",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 7846,
+    "affinity": 0.8586956521739131,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "ikesaki.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=ikesaki.com.br&t=2&s=1&h=227bea6f13902b3ae5c6599bf035adb8123d93b3b0c8d6577cc00ec5800515a2",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 1398,
+    "affinity": 0.8478260869565217,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "iapcosmeticos.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=iapcosmeticos.com.br&t=2&s=1&h=8e29d833b04aa726a90c05292a86e09ac657b86ed42a03a509678322c7d39f51",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 4449,
+    "affinity": 0.8260869565217391,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "belezanaweb.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=belezanaweb.com.br&t=2&s=1&h=14a3aaaaa0f0f07b9a3b2453366321bb9c0bc3572950c2f77b7dbbd676ce20d4",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 90,
+    "affinity": 0.8152173913043478,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "lojasrede.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=lojasrede.com.br&t=2&s=1&h=1a4f972976b1f095d0f1fadd5fbef3ec51433e58f41c81b78fc26a079782a09b",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 632,
+    "affinity": 0.8043478260869564,
+    "isDataFromGa": false
+   },
+   {
+    "domain": "foreverliss.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=foreverliss.com.br&t=2&s=1&h=7e79c5518628f9ce4bb3ca36f1085861cb26d81c78d258af66fa54ad1ec14a1a",
+    "categoryId": "lifestyle/beauty_and_cosmetics",
+    "categoryRank": 865,
+    "affinity": 0.7608695652173912,
+    "isDataFromGa": false
+   }
+  ],
+  "countryRankCompetitors": [],
+  "globalRankCompetitors": [],
+  "topInterestedWebsites": [
+   {
+    "domain": "shopee.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=shopee.com.br&t=2&s=1&h=d6e2120cad86dea55bf46bc455dd730eb3b8905c25c5647eabc75ff6453d294e"
+   },
+   {
+    "domain": "lista.mercadolivre.com.br",
+    "icon": "https://site-images.similarcdn.com/image?url=lista.mercadolivre.com.br&t=2&s=1&h=a8475421079a0dc81effb1ffca5b5d34c59afd89cfccb8be83c5153d48bff2c3"
+   },
+   {
+    "domain": "linkedin.com",
+    "icon": "https://site-images.similarcdn.com/image?url=linkedin.com&t=2&s=1&h=64a0e043fc8ff74ac308e3f0e136ae7d1b6544be4e9e704ad7fd062070be48a1"
+   },
+   {
+    "domain": "facebook.com",
+    "icon": "https://site-images.similarcdn.com/image?url=facebook.com&t=2&s=1&h=be773d6b77aa3d59b6a671c5c27ad729b1ae77400e89776e2f749cce6b926c4b"
+   },
+   {
+    "domain": "drive.google.com",
+    "icon": "https://site-images.similarcdn.com/image?url=drive.google.com&t=2&s=1&h=754fae1bb338f62771de64117d1d78fc084195207c806a70294137b9adebfdd7"
+   }
+  ],
+  "topInterestedTopics": [
+   "social network",
+   "community",
+   "social",
+   "social media",
+   "social networking"
+  ],
+  "topInterestedCategories": [
+   "computers_electronics_and_technology/social_networks_and_online_communities",
+   "e-commerce_and_shopping/marketplace",
+   "ai_chatbots_and_tools",
+   "computers_electronics_and_technology/file_sharing_and_hosting",
+   "computers_electronics_and_technology/programming_and_developer_software"
+  ],
+  "technologies": [
+   {
+    "categoryId": "advertising",
+    "topTechName": "DoubleClick",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=239",
+    "technologiesTotalCount": 10
+   },
+   {
+    "categoryId": "ecommerce",
+    "topTechName": "WooCommerce",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=1145",
+    "technologiesTotalCount": 6
+   },
+   {
+    "categoryId": "social",
+    "topTechName": "Google+ Platform",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=1345",
+    "technologiesTotalCount": 5
+   },
+   {
+    "categoryId": "widget",
+    "topTechName": "Twemoji",
+    "topTechIconUrl": "https://s3.amazonaws.com/s3-static-us-east-1.similarweb.com/technographics/id=3218",
+    "technologiesTotalCount": 4
+   }
+  ],
+  "ageDistribution": [
+   {
+    "minAge": 25,
+    "maxAge": 34,
+    "value": 0.28342892923627105
+   },
+   {
+    "minAge": 35,
+    "maxAge": 44,
+    "value": 0.2146327176401957
+   },
+   {
+    "minAge": 18,
+    "maxAge": 24,
+    "value": 0.2033030302413495
+   },
+   {
+    "minAge": 45,
+    "maxAge": 54,
+    "value": 0.1456946265991168
+   },
+   {
+    "minAge": 55,
+    "maxAge": 64,
+    "value": 0.09456810330869138
+   },
+   {
+    "minAge": 65,
+    "maxAge": null,
+    "value": 0.058372592974375616
+   }
+  ],
+  "maleDistribution": 0.35502327951576595,
+  "femaleDistribution": 0.644976720484234,
+  "scrapedAt": "2026-09-29T02:38:03.419Z",
+  "snapshotDate": "2026-08-01T00:00:00+00:00"
+ }
+]

@@ -29,7 +29,7 @@ RUNS = {
         "resultsPerPage": 20}),
     # Mercado Livre: vendedores, preço e frete dos produtos Márcia
     "mercadolivre": ("karamelo~mercadolivre-scraper-brasil-portugues", {
-        "search": "marcia cosmeticos aney", "maxItems": 60}),
+        "keyword": "marcia cosmeticos", "maxPages": 2}),
     # Tráfego estimado e canais de aquisição do site e dos concorrentes
     "similarweb": ("tri_angle~similarweb-scraper", {
         "websites": ["marciacosmeticos.com.br", "salonline.com.br", "skala.com.br",
@@ -38,7 +38,7 @@ RUNS = {
     "google_serp": ("apidojo~google-search-scraper", {
         "searchTerms": ["márcia cosméticos", "site:marciaonline.com.br", "site:marciacosmeticos.com.br",
                         "shampoo aney brilho molhado", "descolorante márcia", "creme para cachos barato"],
-        "countryCode": "br", "languageCode": "pt-BR", "maxPagesPerQuery": 1, "maxItems": 60}),
+        "countryCode": "br", "languageCode": "pt", "maxPagesPerQuery": 1, "maxItems": 60}),
 }
 
 
